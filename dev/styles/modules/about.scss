@@ -1,0 +1,21 @@
+@import '../core';
+
+.about {
+	padding: 180px 0;
+	&__title {
+		margin-bottom: 36px;
+
+        color: $colorAsfalt;
+	}
+	&__text {
+		max-width: 1256px;
+		p {
+			margin-bottom: 24px;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 1.5;
+
+            color: $colorAsfalt;
+		}
+	}
+}

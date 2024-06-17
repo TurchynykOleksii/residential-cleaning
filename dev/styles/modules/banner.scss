@@ -1,28 +1,61 @@
-@import "../core";
+@import '../core';
 
 .banner {
-	min-height: 40rem;
+    position: relative;
+	padding-top: 118px;
+	padding-bottom: 245px;
+    background-image: url('../../img/general/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    &:before{
+        content: '';
 
-	@include minw($sm-pc) {
-		min-height: 50rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        max-height: 728px;
+        height: 100%;
+        clip-path: polygon(0 0, 73% 0, 53% 100%, 0% 100%);
+        background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    }
+	&__inner {
+        margin-left: 55px;
+		max-width: 505px;
 	}
-
-	&__wrap {
-		max-width: 57rem;
+	&__headline {
+		font-weight: 600;
+		font-size: 32px;
 	}
+	&__title {
+		margin-bottom: 120px;
 
-	&__img {
-		display: flex;
-		justify-content: center;
-		max-height: 40rem;
+		font-weight: 600;
+		font-size: 96px;
+		line-height: 1.04;
+	}
+	&__btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
 
-		img {
-			max-width: 100%;
-			max-height: 100%;
+		padding: 8px 54px;
+
+		
+
+		background-color: $colorOrange;
+
+		border: none;
+
+		span {
+			color: $colorWhite;
+            font-weight: 600;
+		font-size: 20px;
+		line-height: 150%;
+		text-transform: uppercase;
 		}
-	}
-
-	h1 {
-		color: #fff;
 	}
 }

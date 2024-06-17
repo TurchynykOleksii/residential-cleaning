@@ -2,44 +2,48 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>@@title</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="Shortcut Icon" type="image/x-icon" href="img/general/favicon.svg" />
-
-	@@loop('_css.html',[
-		{"name": "example"},
-		{"name": "banner"},
-		{"name": "video"},
-		{"name": "anchor"},
-		{"name": "tabs"},
-		{"name": "popup"},
-		{"name": "slider"},
-	])
-
-	<link rel="stylesheet" href="css/libs/swiper.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@@title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/libs/swiper.css">
 </head>
 
 <body>
 
-<!-- Add autoHide class to automatically hide the header on scroll -->
-<header class="header autoHide">
-	<div class="container">
-		<a href="/" class="header__logo"><img src="img/general/logo.svg" alt="logo"></a>
+    <!-- Add autoHide class to automatically hide the header on scroll -->
+    <header class="header">
+        <div class="header__logo-phone">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="header__logo">LOGOGO</a>
+                    <a href="tel:14378684158" class="header__phone">
+                        <div class="header__logo-icon">
+                            <img src="../img/icons/phone-white.svg" alt="phone icon">
+                        </div>
+                        <span>1(437)868-4158</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__navigation">
+            <div class="container">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#">Home</a></li>
+                        <li class="header__item"><a href="#">Services </a></li>
+                        <li class="header__item"><a href="#">Advanced Solutions</a></li>
+                        <li class="header__item"><a href="#">About Us</a></li>
+                        <li class="header__item"><a href="#">Book Online</a></li>
+                        <li class="header__item"><a href="#">Contacts</a></li>
+                        <li class="header__item"><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-		<div class="header__menu">
+    </header>
 
-			<ul class="header__menu-list">
-				<li class="menu-item"><a href="page.html">page</a></li>
-				<li class="menu-item"><a href="#">Menu 2</a></li>
-				<li class="menu-item"><a href="#">Menu 3</a></li>
-			</ul>
-		</div>
-		
-		<div class="header__burger"></div>
-	</div>
-</header>
-
-<main class="main">
+    <main class="main">

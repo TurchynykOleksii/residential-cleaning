@@ -16,10 +16,15 @@
 
 html {
   font-size: 10px;
-  background-color: $bgColor;
+  background-color: $colorWhite;
   scroll-behavior: smooth;
 }
-
+a{
+    text-decoration: none;
+}
+ol,ul{
+    list-style: none;
+}
 body {
   font-family: Golos, sans-serif;
 
