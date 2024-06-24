@@ -1,0 +1,133 @@
+@import '../core';
+
+.subscribe {
+	padding: 40px 0 83px;
+
+	@include minw($sm-pc) {
+		padding: 90px 0 180px;
+	}
+	&__inner {
+		position: relative;
+		padding: 60px 0;
+		background-image: url('../../img//general/subscribe-bg.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		@include minw($sm-pc) {
+			padding: 100px 0;
+		}
+
+		&:before {
+			content: '';
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			display: block;
+			width: 100%;
+			height: 100%;
+
+			clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+			background: linear-gradient(
+				90deg,
+				rgba(249, 127, 104, 100%) 0%,
+				rgba(249, 127, 104, 40%) 50%
+			);
+			backdrop-filter: blur(4px);
+			@include minw($sm-pc) {
+				clip-path: polygon(0 0, 71% 0, 40% 100%, 0% 100%);
+				background: linear-gradient(
+					90deg,
+					rgba(249, 127, 104, 100%) 0%,
+					rgba(249, 127, 104, 40%) 50%
+				);
+			}
+		}
+	}
+	&__wrap {
+		display: flex;
+		align-items: center;
+		gap: 135px;
+	}
+	&__info {
+		max-width: 440px;
+	}
+	&__title {
+		max-width: 278px;
+		margin-bottom: 68px;
+
+		font-weight: 700;
+		font-size: 30px;
+		color: $colorWhite;
+		font-family: Jost, sans-serif;
+		line-height: 1.4;
+        @include minw(375px) {
+            font-size: 32px;
+        }
+		@include minw($sm-pc) {
+			max-width: 100%;
+			margin-bottom: 16px;
+			font-size: 50px;
+		}
+	}
+	&__text {
+		max-width: 277px;
+		margin-bottom: 36px;
+
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.04em;
+		color: $colorWhite;
+
+		@include minw($sm-pc) {
+			max-width: 100%;
+			font-size: 24px;
+		}
+	}
+	&__discount {
+		position: absolute;
+        top: 68px;
+        right: -7px;
+		width: 105px;
+		height: 105px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		font-weight: 600;
+		font-size: 42px;
+		line-height: 1.5;
+		color: $colorGreen;
+		font-family: Jost, sans-serif;
+
+		border-radius: 100%;
+		background-color: rgba($color: $colorWhite, $alpha: 0.7);
+		backdrop-filter: blur(8px);
+		box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.07);
+        @include minw(375px) {
+            width: 111px;
+		height: 111px;
+        }
+
+		@include minw($tablet) {
+			position: static;
+			width: 276px;
+			height: 276px;
+			font-size: 100px;
+		}
+	}
+	&__btn {
+		background-color: $colorWhite;
+		color: $colorOrange;
+
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 1.5;
+		text-transform: uppercase;
+        @include minw($sm-pc) {font-size: 20px;}
+	}
+}

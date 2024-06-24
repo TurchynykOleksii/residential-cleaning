@@ -1,0 +1,260 @@
+@import '../core';
+
+.prices {
+	padding: 36px 0 46px;
+
+	background-color: $colorAsfalt;
+	&__inner {
+		* {
+			color: $colorWhite;
+		}
+	}
+	&__title {
+		display: none;
+		@include minw($sm-pc) {
+			display: block;
+			margin-bottom: 36px;
+
+			font-family: Jost, sans-serif;
+
+			font-weight: 600;
+			font-size: 40px;
+		}
+	}
+	&__text {
+		display: none;
+		@include minw($sm-pc) {
+			display: block;
+			margin-bottom: 120px;
+			max-width: 1256px;
+
+			font-weight: 400;
+			font-size: 20px;
+
+			line-height: 1.5;
+
+			color: $colorGray;
+		}
+	}
+	&__btns {
+		margin: 0 auto 60px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+		max-width: 353px;
+
+		width: 100%;
+		@include minw($sm-pc) {
+			max-width: 678px;
+		}
+	}
+	&__radio-btn {
+		display: flex;
+		justify-content: center;
+		gap: 14px;
+		align-items: center;
+		span {
+			font-family: Jost, sans-serif;
+			font-size: 20px;
+			font-weight: 500;
+			@include minw($sm-pc) {
+				font-size: 32px;
+				text-align: center;
+			}
+		}
+	}
+	&__radio-offer {
+		position: relative;
+
+		width: 25px;
+		height: 25px;
+
+		& ~ span {
+			transition: color 200ms ease-out;
+		}
+
+		&:after {
+			content: '';
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			display: block;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+
+			background-color: $colorOrange;
+
+			transform: translate(-50%, -50%) scale(0);
+
+			transition: transform 150ms ease-out;
+		}
+		&:before {
+			content: '';
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: block;
+
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+
+			font-size: 25px;
+
+			background-color: $colorWhite;
+
+			transform: translate(-50%, -50%);
+		}
+
+		&:checked {
+			& ~ span {
+				color: $colorOrange;
+			}
+			&:after {
+				transform: translate(-50%, -50%) scale(1);
+			}
+		}
+	}
+	&__offer {
+		margin-bottom: 120px;
+	}
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 11px;
+		&.prices__commercial {
+			@include minw(355px) {
+				justify-content: start;
+			}
+			@include minw($tablet) {
+				justify-content: center;
+			}
+			@include minw($sm-pc) {
+				gap: 30px;
+			}
+		}
+		@include minw($sm-pc) {
+			gap: 85px;
+		}
+	}
+	&__item {
+		min-width: 155px;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		align-items: center;
+		@include minw($sm-pc) {
+			gap: 10px;
+		}
+	}
+	&__num {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 600;
+		font-size: 70px;
+
+		line-height: 88%;
+		font-family: Jost, sans-serif;
+
+		img {
+			width: 61px;
+			height: 60px;
+		}
+
+		@include minw($sm-pc) {
+			font-size: 170px;
+			img {
+				width: 81px;
+				height: 80px;
+			}
+		}
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 5px;
+		font-family: Jost, sans-serif;
+	}
+	&__info-item {
+		font-weight: 500;
+		font-size: 14px;
+		font-family: Jost, sans-serif;
+		@include minw($sm-pc) {
+			font-size: 24px;
+		}
+	}
+	&__coast {
+		color: $colorOrange;
+		font-family: Jost, sans-serif;
+		font-weight: 500;
+	}
+
+	&__residential.prices__hide {
+		display: none;
+	}
+	&__commercial.prices__hide {
+		display: none;
+	}
+	&__bttns {
+		margin-left: auto;
+
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+	}
+	&__btn {
+		color: $colorWhite;
+
+		background-color: $colorOrange;
+		border: none;
+
+		img {
+			margin-left: 10px;
+		}
+
+		&:first-child {
+			padding: 8px 54px;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 1.5;
+			text-transform: uppercase;
+		}
+
+		&:nth-child(2) {
+			margin-right: 10px;
+			padding: 10px 17px;
+			font-weight: 700;
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+		&:last-child {
+			margin: 0 auto;
+			max-width: 353px;
+			width: 100%;
+			padding: 8px;
+			font-weight: 700;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+	}
+}
+.hide__mobile {
+	@include maxw($sm-pc) {
+		display: none;
+	}
+}
+.hide__pc {
+	@include minw($sm-pc) {
+		display: none;
+	}
+}

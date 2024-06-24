@@ -2,9 +2,11 @@
 
 .header {
 	&__logo-phone {
-		padding: 27px 0;
-
+		padding: 8px 0;
 		background-color: $colorAsfalt;
+		@include minw($sm-pc) {
+			padding: 14px 0;
+		}
 	}
 	&__inner {
 		display: flex;
@@ -12,14 +14,29 @@
 		gap: 30px;
 		align-items: center;
 	}
+	&__burger {
+		width: 24px;
+		height: 24px;
+		background-color: transparent;
+		border: none;
+		@include minw($sm-pc) {
+			display: none;
+		}
+	}
 	&__logo,
 	&__phone span {
+		font-family: Jost, sans-serif;
 		color: $colorWhite;
 	}
 	&__logo {
-		font-weight: 400;
-		font-size: 34px;
-		letter-spacing: 0.04em;
+        max-width: 78px;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        @include minw($sm-pc) {
+            max-width: 124px;
+        }
 	}
 	&__phone {
 		display: flex;
@@ -27,9 +44,13 @@
 		gap: 12px;
 	}
 	&__phone span {
-		font-weight: 800;
-		font-size: 34px;
-		letter-spacing: 0.04em;
+		display: none;
+		@include minw($sm-pc) {
+			display: inline-block;
+			font-weight: 800;
+			font-size: 34px;
+			letter-spacing: 0.04em;
+		}
 	}
 	&__navigation {
 		padding: 12px 0;
@@ -41,18 +62,34 @@
 		justify-content: center;
 	}
 	&__list {
-		max-width: 1170px;
+		max-width: 353px;
 		width: 100%;
 
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		gap: 30px;
+        @include minw($sm-pc) {
+            max-width: 1170px;
+        }
 	}
 	&__item a {
 		font-weight: 600;
-		font-size: 24px;
+		font-size: 16px;
 
 		color: $colorAsfalt;
+		font-family: Jost, sans-serif;
+        @include minw(375px) {
+            font-size: 20px;
+        }
+        @include minw($sm-pc) {
+            font-size: 24px;
+        }
+	}
+	&__item-hide {
+		display: none;
+		@include minw($sm-pc) {
+			display: block;
+		}
 	}
 }

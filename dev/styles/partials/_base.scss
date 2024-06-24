@@ -26,7 +26,7 @@ ol,ul{
     list-style: none;
 }
 body {
-  font-family: Golos, sans-serif;
+  font-family: Amethysta, sans-serif;
 
   display: flex;
   flex-direction: column;
@@ -51,14 +51,19 @@ section {
 
 main {
   flex: 1;
-  margin-top: 6rem;
 
   @include minw($sm-pc) {
     margin-top: 0;
   }
 }
 
+.bttn{
+    color: #fff;
+    background-color: #f97f68;
+    border: none;
 
+    font-family: Jost, sans-serif;
+}
 //===========================
 // Helpers
 //===========================

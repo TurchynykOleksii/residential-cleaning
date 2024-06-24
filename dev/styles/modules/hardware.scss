@@ -1,0 +1,126 @@
+@import '../core';
+
+.hardware {
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	@include minw($sm-pc) {
+		padding-top: 90px;
+		padding-bottom: 100px;
+	}
+
+	&__titles {
+		margin-bottom: 60px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 36px;
+		@include minw($sm-pc) {
+			display: none;
+		}
+		& > .hardware__headline {
+			margin-bottom: 0;
+			display: block;
+			font-size: 20px;
+			&:first-child {
+				width: 100%;
+				margin: 0 auto;
+				color: $colorGreen;
+			}
+		}
+	}
+	&__img {
+		img {
+			width: 60px;
+			height: 60px;
+			@include minw($sm-pc) {
+				width: 98px;
+				height: 98px;
+			}
+		}
+	}
+	&__list {
+		margin-bottom: 60px;
+
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 30px;
+		@include minw($sm-pc) {
+			justify-content: space-between;
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+
+		&:first-child {
+			.hardware__headline {
+				color: $colorGreen;
+			}
+		}
+	}
+	&__headline {
+		display: none;
+		margin-bottom: 60px;
+
+		font-weight: 500;
+		font-size: 32px;
+		text-align: center;
+
+		color: $colorOrange;
+		font-family: Jost, sans-serif;
+		@include minw($sm-pc) {
+			display: block;
+		}
+	}
+	&__info {
+		margin-bottom: 36px;
+		min-width: 156px;
+		max-width: 156px;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+
+		@include minw($sm-pc) {
+			margin-bottom: 120px;
+			max-width: 100%;
+			gap: 16px;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+	}
+	&__name,
+	&__coasts {
+		font-weight: 500;
+		font-size: 20px;
+		font-family: Jost, sans-serif;
+		@include minw($sm-pc) {
+			font-size: 24px;
+		}
+	}
+	&__coasts {
+		color: $colorGreen;
+	}
+	&__link {
+		margin: 0 auto ;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 1.5;
+		text-transform: uppercase;
+        @include minw($tablet) {
+            margin: 0 0 0 auto;
+        }
+	}
+}
+
+.content__hide {
+	visibility: hidden;
+	height: 0;
+	width: 0;
+}

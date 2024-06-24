@@ -1,0 +1,69 @@
+@import '../core';
+
+.discount {
+	padding: 32px 0 40px;
+    @include minw($sm-pc) {
+        padding: 90px 0;
+    }
+	&__title {
+		margin-bottom: 48px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+
+		font-weight: 600;
+		font-size: 26px;
+		color: $colorAsfalt;
+		font-family: Jost, sans-serif;
+        @include minw($sm-pc) {
+
+            margin-bottom: 60px;
+            font-size: 40px;
+        }
+	}
+	&__info {
+		display: flex;
+		align-items: center;
+		gap: 36px;
+		img {
+			display: none;
+		}
+		@include minw($sm-pc) {
+			img {
+				display: block;
+			}
+		}
+	}
+	p,
+	span {
+		font-weight: 400;
+		font-size: 16px;
+		color: $colorAsfalt;
+        @include minw($sm-pc) {
+            font-size: 20px;
+        }
+	}
+	p {
+		max-width: 1056px;
+		span {
+			display: block;
+			margin-bottom: 20px;
+		}
+	}
+	&__img-mob {
+		width: 87px;
+		height: 95px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+		img {
+			width: 100%;
+		}
+		@include minw($sm-pc) {
+			display: none;
+		}
+	}
+}

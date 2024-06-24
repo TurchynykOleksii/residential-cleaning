@@ -1,15 +1,16 @@
 @import "../core";
 
 .bttn {
-	text-decoration: none;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
+    padding: 8px 54px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    max-width: max-content;
+
 	color: #fff;
-	background-color: $bttnColor;
-	padding: 1.6rem 2rem;
-	border-radius: 1.8rem;
-	font-size: 1.6rem;
+    background-color: #f97f68;
+    text-decoration: none;
 	border: none;
 	cursor: pointer;
 }

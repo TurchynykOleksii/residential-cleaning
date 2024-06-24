@@ -1,0 +1,122 @@
+@import '../core';
+
+.deep {
+	padding: 40px 0 0;
+
+	@include minw($sm-pc) {
+		padding-top: 101px;
+		padding-bottom: 90px;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		font-weight: 600;
+		font-size: 26px;
+		color: $colorAsfalt;
+		font-family: Jost, sans-serif;
+		@include minw($sm-pc) {
+			margin-bottom: 60px;
+			font-size: 40px;
+		}
+	}
+	&__text {
+		display: none;
+		@include minw($sm-pc) {
+			display: flex;
+			flex-direction: column;
+			gap: 36px;
+		}
+		p {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 1.5;
+			color: $colorAsfalt;
+		}
+	}
+	&-mob {
+        margin-top: 16px;
+        padding-top: 0;
+        padding-bottom: 0;
+		@include minw($sm-pc) {
+			display: none;
+		}
+	}
+    &-mob__inner{
+        width: 0;
+        height: 0;
+		opacity: 0;
+		visibility: hidden;
+    }
+	&-mob__text {
+		display: flex;
+		flex-direction: column;
+		gap: 36px;
+		@include minw($sm-pc) {
+			display: none;
+		}
+		p {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 1.5;
+			color: $colorAsfalt;
+		}
+	}
+}
+
+.all-in {
+	position: relative;
+	padding-top: 90px;
+	padding-bottom: 90px;
+
+	background-image: url('../../img/general/all-in-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+		background: linear-gradient(280deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+		@include minw($sm-pc) {
+			clip-path: polygon(26% 0, 100% 0, 100% 100%, 48% 100%);
+		}
+	}
+
+	&__title {
+		margin-bottom: 24px;
+
+		font-weight: 600;
+		font-size: 57px;
+		line-height: 1.17;
+		text-align: right;
+
+		color: $colorOrange;
+		font-family: Jost, sans-serif;
+		@include minw($sm-pc) {
+			font-size: 128px;
+		}
+	}
+	&__text {
+		max-width: 266px;
+		margin-left: auto;
+
+		font-weight: 600;
+		font-size: 22px;
+		text-align: right;
+		color: $colorAsfalt;
+		font-family: Jost, sans-serif;
+		@include minw(375px) {
+			max-width: 293px;
+		}
+		@include minw($sm-pc) {
+			max-width: 554px;
+			font-size: 40px;
+		}
+	}
+}

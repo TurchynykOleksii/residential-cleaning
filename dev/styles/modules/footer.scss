@@ -1,10 +1,97 @@
-@import "../core";
+@import '../core';
 
 .footer {
-	background-color: $black;
-	padding: 6rem 0;
+	background-color: $colorAsfalt;
+	padding: 40px 0;
+    @include minw($sm-pc) {
+        padding: 100px 0;
+    }
 
-	p {
-		color: #fff;
+	* {
+		color: $colorGray;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column-reverse;
+		@include minw($sm-pc) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	&__menu {
+		display: none;
+		@include minw($sm-pc) {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+	}
+	&__menu-item a {
+		font-weight: 400;
+		font-size: 16px;
+		font-family: Jost, sans-serif;
+	}
+	&__address {
+		@include minw($sm-pc) {
+			margin-left: 142px;
+		}
+	}
+	&__adress-list {
+		margin-bottom: 46px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+	&__address-item {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		font-family: Jost, sans-serif;
+	}
+	&__social {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 24px;
+		@include minw($sm-pc) {
+			justify-content: start;
+		}
+	}
+	&__copy {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 46px;
+		@include minw($sm-pc) {
+			margin-left: auto;
+			align-items: end;
+		}
+		a {
+			font-weight: 700;
+			font-size: 70px;
+			color: $colorOrange;
+			font-family: Jost, sans-serif;
+		}
+		p {
+			display: none;
+			@include minw($sm-pc) {
+				display: block;
+				font-weight: 400;
+				font-size: 16px;
+				font-family: Jost, sans-serif;
+			}
+		}
+	}
+	&__copy-mob {
+        margin-top: 32px;
+		font-weight: 400;
+		font-size: 16px;
+		font-family: Jost, sans-serif;
+        order: -2;
+		@include minw($sm-pc) {
+			display: none;
+		}
 	}
 }

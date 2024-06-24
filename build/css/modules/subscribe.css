@@ -1,0 +1,129 @@
+.subscribe {
+  padding: 40px 0 83px;
+}
+@media only screen and (min-width: 992px) {
+  .subscribe {
+    padding: 90px 0 180px;
+  }
+}
+.subscribe__inner {
+  position: relative;
+  padding: 60px 0;
+  background-image: url("../../img//general/subscribe-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (min-width: 992px) {
+  .subscribe__inner {
+    padding: 100px 0;
+  }
+}
+.subscribe__inner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  background: linear-gradient(90deg, rgb(249, 127, 104) 0%, rgba(249, 127, 104, 0.4) 50%);
+  backdrop-filter: blur(4px);
+}
+@media only screen and (min-width: 992px) {
+  .subscribe__inner:before {
+    clip-path: polygon(0 0, 71% 0, 40% 100%, 0% 100%);
+    background: linear-gradient(90deg, rgb(249, 127, 104) 0%, rgba(249, 127, 104, 0.4) 50%);
+  }
+}
+.subscribe__wrap {
+  display: flex;
+  align-items: center;
+  gap: 135px;
+}
+.subscribe__info {
+  max-width: 440px;
+}
+.subscribe__title {
+  max-width: 278px;
+  margin-bottom: 68px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  font-family: Jost, sans-serif;
+  line-height: 1.4;
+}
+@media only screen and (min-width: 375px) {
+  .subscribe__title {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .subscribe__title {
+    max-width: 100%;
+    margin-bottom: 16px;
+    font-size: 50px;
+  }
+}
+.subscribe__text {
+  max-width: 277px;
+  margin-bottom: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+@media only screen and (min-width: 992px) {
+  .subscribe__text {
+    max-width: 100%;
+    font-size: 24px;
+  }
+}
+.subscribe__discount {
+  position: absolute;
+  top: 68px;
+  right: -7px;
+  width: 105px;
+  height: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.5;
+  color: #5ac3b0;
+  font-family: Jost, sans-serif;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.07);
+}
+@media only screen and (min-width: 375px) {
+  .subscribe__discount {
+    width: 111px;
+    height: 111px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .subscribe__discount {
+    position: static;
+    width: 276px;
+    height: 276px;
+    font-size: 100px;
+  }
+}
+.subscribe__btn {
+  background-color: #fff;
+  color: #f97f68;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 992px) {
+  .subscribe__btn {
+    font-size: 20px;
+  }
+}

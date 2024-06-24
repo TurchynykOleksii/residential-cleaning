@@ -1,11 +1,16 @@
 .banner {
   position: relative;
-  padding-top: 118px;
-  padding-bottom: 245px;
+  padding-bottom: 55px;
   background-image: url("../../img/general/banner.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: cover;
+}
+@media only screen and (min-width: 992px) {
+  .banner {
+    padding-top: 118px;
+    padding-bottom: 245px;
+  }
 }
 .banner:before {
   content: "";
@@ -14,27 +19,57 @@
   left: 0;
   display: block;
   width: 100%;
-  max-height: 728px;
+  max-height: 264px;
   height: 100%;
-  clip-path: polygon(0 0, 73% 0, 53% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 53% 100%, 0% 100%);
   background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
-.banner__inner {
-  margin-left: 55px;
-  max-width: 505px;
+@media only screen and (min-width: 992px) {
+  .banner:before {
+    max-height: 728px;
+    clip-path: polygon(0 0, 73% 0, 53% 100%, 0% 100%);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .banner__inner {
+    margin-left: 55px;
+    max-width: 505px;
+  }
 }
 .banner__headline {
+  margin-bottom: 6px;
+  font-family: Jost, sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .banner__headline {
+    font-weight: 600;
+    font-size: 32px;
+  }
 }
 .banner__title {
-  margin-bottom: 120px;
+  max-width: 264px;
+  margin-bottom: 277px;
+  font-family: Jost, sans-serif;
   font-weight: 600;
-  font-size: 96px;
-  line-height: 1.04;
+  font-size: 40px;
+  line-height: 1.2;
+}
+@media only screen and (min-width: 992px) {
+  .banner__title {
+    margin-bottom: 120px;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 1.04;
+  }
 }
 .banner__btn {
+  max-width: 353px;
+  margin: 0 auto;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 5px;
   padding: 8px 54px;
@@ -44,7 +79,12 @@
 .banner__btn span {
   color: #fff;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 150%;
+  font-size: 16px;
+  line-height: 1.5;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 992px) {
+  .banner__btn span {
+    font-size: 20px;
+  }
 }
