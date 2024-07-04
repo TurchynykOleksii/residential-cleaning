@@ -1,0 +1,69 @@
+@import '../core';
+.main-clean {
+	&__title {
+		margin-bottom: 24px;
+		font-weight: 600;
+		font-size: 40px;
+		font-family: Jost, sans-serif;
+	}
+}
+.swiper {
+	position: relative;
+}
+.swiper__image {
+	max-width: 1114px;
+	max-height: 840px;
+	width: 100%;
+	img {
+		max-width: 100%;
+	}
+}
+.swiper-slide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h4 {
+		font-family: Jost, sans-serif;
+		margin-bottom: 24px;
+		color: $colorOrange;
+		text-align: center;
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 1.19;
+	}
+}
+.swiper-button-prev,
+.swiper-button-next {
+    &:hover{
+        cursor: pointer;
+    }
+}
+.swiper__pagination-wrap {
+	position: absolute;
+	width: 100%;
+	top: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 230px;
+	z-index: 3;
+}
+.swiper-pagination {
+	margin-top: 24px;
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+.swiper-pagination-bullet {
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background-color: #d9d9d9;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.swiper-pagination-bullet-active {
+	background-color: rgba(90, 195, 176, 0.7);
+}

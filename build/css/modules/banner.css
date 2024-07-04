@@ -88,3 +88,106 @@
     font-size: 20px;
   }
 }
+
+.main-banner {
+  position: relative;
+  padding-bottom: 55px;
+  background-image: url("../../img/cover/main-banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+@media only screen and (min-width: 992px) {
+  .main-banner {
+    padding-top: 118px;
+    padding-bottom: 245px;
+  }
+}
+.main-banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-height: 264px;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+@media only screen and (min-width: 992px) {
+  .main-banner:before {
+    max-height: 728px;
+    clip-path: polygon(0 0, 85% 0, 65% 100%, 0% 100%);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-banner:before {
+    clip-path: polygon(0 0, 75% 0, 60% 100%, 0% 100%);
+  }
+}
+.main-banner__headline {
+  margin-bottom: 6px;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .main-banner__headline {
+    font-weight: 600;
+    font-size: 32px;
+  }
+}
+.main-banner__title {
+  max-width: 288px;
+  margin-bottom: 133px;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+}
+@media only screen and (min-width: 992px) {
+  .main-banner__title {
+    max-width: 400px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-banner__title {
+    margin-bottom: 120px;
+    max-width: 789px;
+    font-weight: 600;
+    font-size: 94px;
+    line-height: 1.04;
+  }
+}
+.main-banner__inner {
+  max-width: 789px;
+}
+.main-banner__btn {
+  max-width: 353px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 54px;
+  background-color: #f97f68;
+  border: none;
+}
+@media only screen and (max-width: 576px) {
+  .main-banner__btn {
+    margin: 0 auto;
+  }
+}
+.main-banner__btn span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 992px) {
+  .main-banner__btn span {
+    font-size: 20px;
+  }
+}

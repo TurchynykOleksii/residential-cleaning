@@ -25,10 +25,10 @@
 		height: 100%;
 		clip-path: polygon(0 0, 100% 0, 53% 100%, 0% 100%);
 		background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
-        @include minw($sm-pc) {
-            max-height: 728px;
-            clip-path: polygon(0 0, 73% 0, 53% 100%, 0% 100%);
-        }
+		@include minw($sm-pc) {
+			max-height: 728px;
+			clip-path: polygon(0 0, 73% 0, 53% 100%, 0% 100%);
+		}
 	}
 	&__inner {
 		@include minw($sm-pc) {
@@ -68,7 +68,7 @@
 		margin: 0 auto;
 		width: 100%;
 		display: flex;
-        justify-content: center;
+		justify-content: center;
 		align-items: center;
 		gap: 5px;
 
@@ -77,6 +77,103 @@
 		background-color: $colorOrange;
 
 		border: none;
+
+		span {
+			color: $colorWhite;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 1.5;
+			text-transform: uppercase;
+			@include minw($sm-pc) {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.main-banner {
+	position: relative;
+	padding-bottom: 55px;
+	background-image: url('../../img/cover/main-banner-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+
+	@include minw($sm-pc) {
+		padding-top: 118px;
+		padding-bottom: 245px;
+	}
+	&:before {
+		content: '';
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		display: block;
+		width: 100%;
+		max-height: 264px;
+		height: 100%;
+		clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+		background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+		@include minw($sm-pc) {
+			max-height: 728px;
+			clip-path: polygon(0 0, 85% 0, 65% 100%, 0% 100%);
+		}
+        @include minw(1200px) {
+            clip-path: polygon(0 0, 75% 0, 60% 100%, 0% 100%);
+        }
+	}
+	&__headline {
+		margin-bottom: 6px;
+		font-family: Jost, sans-serif;
+		font-weight: 600;
+		font-size: 20px;
+
+		@include minw($sm-pc) {
+			font-weight: 600;
+			font-size: 32px;
+		}
+	}
+	&__title {
+		max-width: 288px;
+		margin-bottom: 133px;
+		font-family: Jost, sans-serif;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 1.2;
+
+        @include minw($sm-pc) {
+            max-width: 400px;
+        }
+
+		@include minw($sm-pc) {
+			margin-bottom: 120px;
+            max-width: 789px;
+			font-weight: 600;
+			font-size: 94px;
+			line-height: 1.04;
+		}
+	}
+	&__inner {
+		max-width: 789px;
+	}
+	&__btn {
+		max-width: 353px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+
+		padding: 8px 54px;
+
+		background-color: $colorOrange;
+
+		border: none;
+        @include maxw($mob) {
+            margin: 0 auto;
+        }
 
 		span {
 			color: $colorWhite;

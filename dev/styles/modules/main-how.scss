@@ -1,0 +1,62 @@
+@import '../core';
+
+.main-how {
+    padding: 180px 0;
+	h2 {
+		margin-bottom: 60px;
+		font-weight: 600;
+		font-size: 40px;
+		font-family: Jost, sans-serif;
+	}
+	&__list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 78px;
+        
+	}
+	&__item {
+		padding: 26px 10px;
+		max-width: 252px;
+		background: rgba(90, 195, 176, 0.7);
+		display: flex;
+		flex-direction: column;
+        justify-content: center;
+		align-items: center;
+		gap: 24px;
+        overflow: hidden;
+        &:first-child{
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-image: url('../../img/icons/Rectangle1.svg');
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        &:last-child{
+            position: relative;
+            &:before{
+                position: absolute;
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-image: url('../../img/icons/Rectangle2.svg');
+                background-position: bottom;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+		p {
+			text-align: center;
+			font-weight: 500;
+			font-size: 24px;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.main-our__title {
+  margin-bottom: 60px;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+.main-our__list {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.main-our__item {
+  max-width: 300px;
+}
+.main-our__headline {
+  margin-bottom: 16px;
+  font-family: Jost, sans-serif;
+  font-weight: 500;
+  font-size: 31px;
+  color: #f97f68;
+}
+.main-our__info p {
+  margin-bottom: 16px;
+  font-family: Amethysta, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.main-our__price {
+  display: block;
+  font-family: Jost, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: right;
+  color: #000;
+}
