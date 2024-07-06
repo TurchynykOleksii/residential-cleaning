@@ -37,7 +37,23 @@ pricesBtnTabEls.forEach((btn) => {
 	});
 });
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.clean', {
+	slidesPerView: 'auto',
+	watchOverflow: true,
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	spaceBetween: 20,
+	autoHeight: true,
+});
+
+const revitalize = new Swiper('.revitalize__swiper', {
 	slidesPerView: 'auto',
 	watchOverflow: true,
 	loop: true,

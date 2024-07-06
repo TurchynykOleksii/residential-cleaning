@@ -2102,21 +2102,21 @@ form label {
   position: relative;
 }
 
-.swiper__image {
+.clean .swiper__image {
   max-width: 1114px;
   max-height: 840px;
   width: 100%;
 }
-.swiper__image img {
+.clean .swiper__image img {
   max-width: 100%;
 }
 
-.swiper-slide {
+.clean .swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.swiper-slide h4 {
+.clean .swiper-slide h4 {
   font-family: Jost, sans-serif;
   margin-bottom: 24px;
   color: #f97f68;
@@ -2131,7 +2131,7 @@ form label {
   cursor: pointer;
 }
 
-.swiper__pagination-wrap {
+.clean .swiper__pagination-wrap {
   position: absolute;
   width: 100%;
   top: 5px;
@@ -2142,26 +2142,173 @@ form label {
   z-index: 3;
 }
 
-.swiper-pagination {
+.clean .swiper-pagination {
   margin-top: 24px;
   display: flex;
   justify-content: center;
   gap: 24px;
 }
 
-.swiper-pagination-bullet {
+.clean .swiper-pagination-bullet, .revitalize__swiper .swiper-pagination-bullet {
   display: block;
   width: 15px;
   height: 15px;
   border-radius: 100%;
   background-color: #d9d9d9;
 }
-.swiper-pagination-bullet:hover {
+.clean .swiper-pagination-bullet:hover, .revitalize__swiper .swiper-pagination-bullet:hover {
   cursor: pointer;
 }
 
-.swiper-pagination-bullet-active {
+.clean .swiper-pagination-bullet-active {
   background-color: rgba(90, 195, 176, 0.7);
+}
+
+.revitalize__swiper .swiper-pagination-bullet-active {
+  background-color: #f97f68;
+}
+
+.revitalize__swiper .swiper-slide {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.revitalize__swiper .swiper__image img {
+  max-width: 785px;
+  max-height: 561px;
+}
+.revitalize__swiper .swiper__pagination-wrap {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  bottom: -10px;
+  width: 100%;
+}
+.revitalize__swiper .swiper-pagination {
+  margin-top: 29px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.main-revitalize__title {
+  margin-bottom: 36px;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+.main-revitalize__subtitle {
+  margin-bottom: 60px;
+  font-family: Amethysta, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.main-revitalize__headline {
+  margin-bottom: 36px;
+  font-family: Jost, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #f97f68;
+}
+.main-revitalize__list {
+  max-width: 319px;
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-revitalize__item {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  font-family: Amethysta, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.main-revitalize__item:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/icons/arrow-done.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.main-revitalize__bttn {
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.service-map__inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .service-map__inner {
+    flex-direction: row;
+  }
+}
+.service-map__title {
+  margin-bottom: 36px;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+@media only screen and (min-width: 992px) {
+  .service-map__title {
+    margin-bottom: 36px;
+    font-size: 40px;
+  }
+}
+.service-map__text {
+  margin-bottom: 36px;
+  font-family: Amethysta, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 992px) {
+  .service-map__text {
+    margin-bottom: 36px;
+    font-size: 20px;
+  }
+}
+.service-map__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.service-map__list span {
+  margin-bottom: 4px;
+  display: block;
+  font-family: Jost, sans-serif;
+  color: #f97f68;
+  font-weight: 600;
+  font-size: 24px;
+}
+.service-map__list a,
+.service-map__list p {
+  font-family: Amethysta, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.service-map__img {
+  flex-shrink: 0;
+}
+.service-map__img img {
+  max-width: 634px;
+  width: 100%;
+  max-height: 614px;
+  height: 100%;
 }
 
 .footer {

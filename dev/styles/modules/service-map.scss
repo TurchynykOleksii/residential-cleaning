@@ -1,0 +1,62 @@
+@import '../core';
+
+.service-map {
+	&__inner {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		@include minw($sm-pc) {
+			flex-direction: row;
+		}
+	}
+	&__title {
+		margin-bottom: 36px;
+		font-family: Jost, sans-serif;
+		font-weight: 600;
+		font-size: 40px;
+        @include minw($sm-pc) {
+            margin-bottom: 36px;
+			font-size: 40px;
+		}
+	}
+	&__text {
+		margin-bottom: 36px;
+		font-family: Amethysta, sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.5;
+        @include minw($sm-pc) {
+            margin-bottom: 36px;
+			font-size: 20px;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		span {
+			margin-bottom: 4px;
+			display: block;
+			font-family: Jost, sans-serif;
+			color: $colorOrange;
+			font-weight: 600;
+			font-size: 24px;
+		}
+		a,
+		p {
+			font-family: Amethysta, sans-serif;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 1.5;
+		}
+	}
+	&__img {
+        flex-shrink: 0;
+		img {
+			max-width: 634px;
+            width: 100%;
+			max-height: 614px;
+            height: 100%;
+		}
+	}
+}
