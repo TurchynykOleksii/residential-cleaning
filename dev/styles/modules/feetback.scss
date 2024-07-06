@@ -12,6 +12,15 @@
 		padding: 100px 0;
 		background-color: $colorAsfalt;
 		overflow: hidden;
+		&-contact {
+			background-color: transparent;
+			& > * {
+				color: red;
+			}
+		}
+	}
+	&-black {
+		color: $colorAsfalt;
 	}
 
 	&__wrapper {
@@ -22,7 +31,7 @@
 		@include minw($tablet) {
 			flex-direction: row;
 			justify-content: space-between;
-            align-items: baseline;
+			align-items: baseline;
 			gap: 152px;
 		}
 	}
@@ -90,7 +99,7 @@
 		line-height: 1.5;
 		text-transform: uppercase;
 
-        @include maxw($tablet) {
+		@include maxw($tablet) {
 			margin: 0 auto;
 		}
 
@@ -215,4 +224,16 @@
 		width: 100%;
 		height: 100%;
 	}
+}
+
+h5.feetback__black,
+h6.feetback__black {
+	color: $colorAsfalt;
+}
+p.feetback__black {
+	color: $colorAsfalt;
+}
+span.feetback__grey,
+input.feetback__grey {
+	color: #72778f;
 }

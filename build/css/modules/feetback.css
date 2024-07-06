@@ -12,6 +12,15 @@
   background-color: #383535;
   overflow: hidden;
 }
+.feetback__inner-contact {
+  background-color: transparent;
+}
+.feetback__inner-contact > * {
+  color: red;
+}
+.feetback-black {
+  color: #383535;
+}
 .feetback__wrapper {
   display: flex;
   flex-direction: column;
@@ -214,4 +223,18 @@
   opacity: 0;
   width: 100%;
   height: 100%;
+}
+
+h5.feetback__black,
+h6.feetback__black {
+  color: #383535;
+}
+
+p.feetback__black {
+  color: #383535;
+}
+
+span.feetback__grey,
+input.feetback__grey {
+  color: #72778f;
 }
