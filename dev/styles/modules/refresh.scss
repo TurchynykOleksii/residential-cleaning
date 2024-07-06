@@ -1,0 +1,31 @@
+@import '../core';
+
+.refresh {
+	&__title {
+		margin-bottom: 60px;
+		font-family: Jost, sans-serif;
+		font-weight: 600;
+		font-size: 40px;
+	}
+	&__subtitle {
+		margin-bottom: 60px;
+		font-family: Amethysta, sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 150%;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__info {
+		display: flex;
+		gap: 20px;
+	}
+	&__img {
+		img {
+			width: 100%;
+		}
+	}
+}

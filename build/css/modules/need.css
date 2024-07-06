@@ -1,0 +1,35 @@
+.need__title {
+  margin-bottom: 60px;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+.need__info {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.need__text {
+  max-width: 472px;
+}
+.need__text p {
+  margin-bottom: 55px;
+  font-family: Amethysta, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.need__bttn {
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.need__img {
+  max-width: 748px;
+  width: 100%;
+}
+.need__img img {
+  max-width: 100%;
+}

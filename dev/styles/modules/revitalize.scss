@@ -64,6 +64,7 @@
 		font-weight: 400;
 		font-size: 20px;
 		&:before {
+            flex-shrink: 0;
 			content: '';
 			display: block;
 			width: 24px;

@@ -1,0 +1,51 @@
+@import '../core';
+
+.tables {
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&-first {
+			margin-bottom: 100px;
+		}
+	}
+	&__item {
+		display: flex;
+        border-top: 1px solid black;
+		p,
+		span {
+			padding: 12px;
+			font-family: Jost, sans-serif;
+			font-weight: 500;
+			font-size: 24px;
+			&:first-child {
+				max-width: 608px;
+				min-width: 608px;
+				width: 100%;
+				border-right: 1px solid black;
+				border-left: 1px solid black;
+			}
+			&:last-child {
+				max-width: 292px;
+				min-width: 292px;
+				width: 100%;
+                border-right: 1px solid black;
+                text-align: right;
+			}
+		}
+		&-headline {
+			span {
+				font-family: Jost, sans-serif;
+				font-weight: 500;
+				font-size: 32px;
+				color: $colorOrange;
+                &:last-child{
+                    text-align-last: left;
+                }
+			}
+		}
+        &:last-child{
+            border-bottom: 1px solid black;
+        }
+	}
+}

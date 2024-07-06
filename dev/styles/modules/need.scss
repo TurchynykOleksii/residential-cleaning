@@ -1,0 +1,40 @@
+@import '../core';
+
+.need {
+	&__title {
+		margin-bottom: 60px;
+		font-family: Jost, sans-serif;
+		font-weight: 600;
+		font-size: 40px;
+	}
+	&__info {
+		display: flex;
+		align-items: center;
+		gap: 48px;
+	}
+	&__text {
+		max-width: 472px;
+
+		p {
+			margin-bottom: 55px;
+			font-family: Amethysta, sans-serif;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 1.5;
+		}
+	}
+	&__bttn {
+		font-family: Jost, sans-serif;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 1.5;
+		text-transform: uppercase;
+	}
+	&__img {
+		max-width: 748px;
+		width: 100%;
+		img {
+			max-width: 100%;
+		}
+	}
+}

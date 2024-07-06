@@ -59,6 +59,7 @@
   font-size: 20px;
 }
 .main-revitalize__item:before {
+  flex-shrink: 0;
   content: "";
   display: block;
   width: 24px;
