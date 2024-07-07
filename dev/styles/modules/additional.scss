@@ -2,7 +2,7 @@
 .additional {
 	display: none;
 	padding: 90px 0;
-	@include minw($sm-pc) {
+	@include minw($lg) {
 		display: block;
 	}
 
@@ -10,7 +10,6 @@
 		margin-bottom: 36px;
 
 		font-weight: 600;
-		font-size: 40px;
 
 		font-family: Jost, sans-serif;
 		color: $colorAsfalt;

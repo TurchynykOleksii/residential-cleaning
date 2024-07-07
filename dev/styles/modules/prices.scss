@@ -11,7 +11,7 @@
 	}
 	&__title {
 		display: none;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			display: block;
 			margin-bottom: 36px;
 
@@ -23,7 +23,7 @@
 	}
 	&__text {
 		display: none;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			display: block;
 			margin-bottom: 120px;
 			max-width: 1256px;
@@ -46,7 +46,7 @@
 		max-width: 353px;
 
 		width: 100%;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			max-width: 678px;
 		}
 	}
@@ -59,7 +59,7 @@
 			font-family: Jost, sans-serif;
 			font-size: 20px;
 			font-weight: 500;
-			@include minw($sm-pc) {
+			@include minw($lg) {
 				font-size: 32px;
 				text-align: center;
 			}
@@ -134,14 +134,13 @@
 			@include minw(355px) {
 				justify-content: start;
 			}
-			@include minw($tablet) {
+			@include minw($lg) {
 				justify-content: center;
+                gap: 30px;
 			}
-			@include minw($sm-pc) {
-				gap: 30px;
-			}
+
 		}
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			gap: 85px;
 		}
 	}
@@ -151,7 +150,7 @@
 		align-items: center;
 		gap: 5px;
 		align-items: center;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			gap: 10px;
 		}
 	}
@@ -170,7 +169,7 @@
 			height: 60px;
 		}
 
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			font-size: 170px;
 			img {
 				width: 81px;
@@ -189,7 +188,7 @@
 		font-weight: 500;
 		font-size: 14px;
 		font-family: Jost, sans-serif;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			font-size: 24px;
 		}
 	}
@@ -249,12 +248,12 @@
 	}
 }
 .hide__mobile {
-	@include maxw($sm-pc) {
+	@include maxw($lg) {
 		display: none;
 	}
 }
 .hide__pc {
-	@include minw($sm-pc) {
+	@include minw($lg) {
 		display: none;
 	}
 }

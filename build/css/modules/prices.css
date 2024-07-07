@@ -8,7 +8,7 @@
 .prices__title {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .prices__title {
     display: block;
     margin-bottom: 36px;
@@ -20,7 +20,7 @@
 .prices__text {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .prices__text {
     display: block;
     margin-bottom: 120px;
@@ -40,7 +40,7 @@
   max-width: 353px;
   width: 100%;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .prices__btns {
     max-width: 678px;
   }
@@ -56,7 +56,7 @@
   font-size: 20px;
   font-weight: 500;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .prices__radio-btn span {
     font-size: 32px;
     text-align: center;
@@ -117,17 +117,13 @@
     justify-content: start;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
   .prices__list.prices__commercial {
     justify-content: center;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .prices__list.prices__commercial {
     gap: 30px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .prices__list {
     gap: 85px;
   }
@@ -139,7 +135,7 @@
   gap: 5px;
   align-items: center;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .prices__item {
     gap: 10px;
   }
@@ -157,7 +153,7 @@
   width: 61px;
   height: 60px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .prices__num {
     font-size: 170px;
   }
@@ -178,7 +174,7 @@
   font-size: 14px;
   font-family: Jost, sans-serif;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .prices__info-item {
     font-size: 24px;
   }
@@ -232,13 +228,13 @@
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1440px) {
   .hide__mobile {
     display: none;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .hide__pc {
     display: none;
   }

@@ -2,12 +2,18 @@
   margin-bottom: 60px;
   font-family: Jost, sans-serif;
   font-weight: 600;
-  font-size: 40px;
 }
 .main-our__list {
   display: flex;
-  gap: 20px;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 38px;
+}
+@media only screen and (min-width: 1440px) {
+  .main-our__list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
 .main-our__item {
   max-width: 300px;

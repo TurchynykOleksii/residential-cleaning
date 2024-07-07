@@ -5,7 +5,7 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			flex-direction: row;
 		}
 	}
@@ -13,11 +13,6 @@
 		margin-bottom: 36px;
 		font-family: Jost, sans-serif;
 		font-weight: 600;
-		font-size: 40px;
-        @include minw($sm-pc) {
-            margin-bottom: 36px;
-			font-size: 40px;
-		}
 	}
 	&__text {
 		margin-bottom: 36px;
@@ -25,7 +20,7 @@
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 1.5;
-        @include minw($sm-pc) {
+        @include minw($lg) {
             margin-bottom: 36px;
 			font-size: 20px;
 		}
@@ -51,7 +46,11 @@
 		}
 	}
 	&__img {
+        display: none;
         flex-shrink: 0;
+        @include minw($lg) {
+            display: flex;
+		}
 		img {
 			max-width: 634px;
             width: 100%;
@@ -59,4 +58,13 @@
             height: 100%;
 		}
 	}
+    &__img-mob{
+        margin-bottom: 20px;
+        img{
+            max-width: 100%;
+        }
+        @include minw($lg) {
+            display: none;
+		}
+    }
 }

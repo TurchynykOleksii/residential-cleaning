@@ -1,7 +1,7 @@
 .deep {
   padding: 40px 0 0;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .deep {
     padding-top: 101px;
     padding-bottom: 90px;
@@ -10,20 +10,18 @@
 .deep__title {
   margin-bottom: 20px;
   font-weight: 600;
-  font-size: 26px;
   color: #383535;
   font-family: Jost, sans-serif;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .deep__title {
     margin-bottom: 60px;
-    font-size: 40px;
   }
 }
 .deep__text {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .deep__text {
     display: flex;
     flex-direction: column;
@@ -41,7 +39,7 @@
   padding-top: 0;
   padding-bottom: 0;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .deep-mob {
     display: none;
   }
@@ -57,7 +55,7 @@
   flex-direction: column;
   gap: 36px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .deep-mob__text {
     display: none;
   }
@@ -71,7 +69,7 @@
 .deep__services {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .deep__services {
     margin-top: 60px;
     display: flex;
@@ -119,7 +117,7 @@
 .deep__text-down {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .deep__text-down {
     display: block;
     margin-top: 60px;
@@ -150,7 +148,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
   background: linear-gradient(280deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .all-in:before {
     clip-path: polygon(26% 0, 100% 0, 100% 100%, 48% 100%);
   }
@@ -164,7 +162,7 @@
   color: #f97f68;
   font-family: Jost, sans-serif;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .all-in__title {
     font-size: 128px;
   }
@@ -183,7 +181,7 @@
     max-width: 293px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .all-in__text {
     max-width: 554px;
     font-size: 40px;

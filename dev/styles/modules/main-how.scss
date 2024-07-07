@@ -1,19 +1,81 @@
 @import '../core';
 
 .main-how {
-    padding: 180px 0;
+	padding: 180px 0;
 	h2 {
 		margin-bottom: 60px;
 		font-weight: 600;
-		font-size: 40px;
+		font-size: 20px;
 		font-family: Jost, sans-serif;
+		@include minw($lg) {
+			font-weight: 600;
+			font-size: 40px;
+		}
 	}
 	&__list {
+		display: none;
+		@include minw($lg) {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 78px;
+		}
+	}
+	&__slider {
+		@include minw($lg) {
+			display: none;
+		}
+	}
+	&__card {
+		padding: 27px 10px;
+		background: rgba(90, 195, 176, 0.7);
+        min-height: 353px;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		flex-wrap: wrap;
-		gap: 78px;
-        
+		align-items: center;
+		gap: 24px;
+		overflow: hidden;
+        box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.25);
+		img {
+			max-width: 153px;
+		}
+        &:hover{
+            cursor: pointer;
+        }
+		&-first {
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-image: url('../../img/icons/Rectangle1.svg');
+				background-position: top;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+		&-last {
+			position: relative;
+			&:before {
+				position: absolute;
+				content: '';
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-image: url('../../img/icons/Rectangle2.svg');
+				background-position: bottom;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+		p {
+			text-align: center;
+			font-weight: 500;
+			font-size: 26px;
+		}
 	}
 	&__item {
 		padding: 26px 10px;
@@ -21,38 +83,38 @@
 		background: rgba(90, 195, 176, 0.7);
 		display: flex;
 		flex-direction: column;
-        justify-content: center;
+		justify-content: center;
 		align-items: center;
 		gap: 24px;
-        overflow: hidden;
-        &:first-child{
-            position: relative;
-            &:before{
-                content: '';
-                position: absolute;
-                display: block;
-                width: 100%;
-                height: 100%;
-                background-image: url('../../img/icons/Rectangle1.svg');
-                background-position: top;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-        }
-        &:last-child{
-            position: relative;
-            &:before{
-                position: absolute;
-                content: '';
-                display: block;
-                width: 100%;
-                height: 100%;
-                background-image: url('../../img/icons/Rectangle2.svg');
-                background-position: bottom;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-        }
+		overflow: hidden;
+		&:first-child {
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-image: url('../../img/icons/Rectangle1.svg');
+				background-position: top;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+		&:last-child {
+			position: relative;
+			&:before {
+				position: absolute;
+				content: '';
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-image: url('../../img/icons/Rectangle2.svg');
+				background-position: bottom;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
 		p {
 			text-align: center;
 			font-weight: 500;
@@ -60,3 +122,19 @@
 		}
 	}
 }
+.swiper-pagination {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.swiper-pagination-bullet {
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-color: #d9d9d9;
+	border-radius: 50%;
+}
+.swiper-pagination-bullet-active{
+    background-color: rgba(90, 195, 176, 0.7);
+} 

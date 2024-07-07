@@ -1,17 +1,22 @@
-.header__logo-phone {
-  padding: 8px 0;
-  background-color: #383535;
+.header {
+  position: relative;
 }
-@media only screen and (min-width: 992px) {
+.header__logo-phone {
+  background-color: #383535;
+  z-index: 3;
+}
+@media only screen and (min-width: 1440px) {
   .header__logo-phone {
     padding: 14px 0;
   }
 }
 .header__inner {
+  padding: 8px 0;
   display: flex;
   justify-content: space-between;
   gap: 30px;
   align-items: center;
+  background-color: #383535;
 }
 .header__burger {
   width: 24px;
@@ -19,7 +24,10 @@
   background-color: transparent;
   border: none;
 }
-@media only screen and (min-width: 992px) {
+.header__burger:hover {
+  cursor: pointer;
+}
+@media only screen and (min-width: 1440px) {
   .header__burger {
     display: none;
   }
@@ -35,7 +43,7 @@
 .header__logo img {
   width: 100%;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .header__logo {
     max-width: 124px;
   }
@@ -48,7 +56,7 @@
 .header__phone span {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .header__phone span {
     display: inline-block;
     font-weight: 800;
@@ -72,7 +80,7 @@
   align-items: center;
   gap: 30px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .header__list {
     max-width: 1170px;
   }
@@ -83,12 +91,12 @@
   color: #383535;
   font-family: Jost, sans-serif;
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 1440px) {
   .header__item a {
     font-size: 20px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .header__item a {
     font-size: 24px;
   }
@@ -96,8 +104,23 @@
 .header__item-hide {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .header__item-hide {
     display: block;
   }
+}
+.header__mobile-menu {
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  z-index: -1;
+  transition: top 250ms ease;
+}
+.header__mobile-menu.header__mobile-hide {
+  top: -500px;
+}
+.header__mobile-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #383535;
 }

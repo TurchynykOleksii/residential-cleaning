@@ -3,14 +3,13 @@
 .customers {
     display: none;
     padding: 90px 0;
-    @include minw($sm-pc) {
+    @include minw($lg) {
         display: block;
     }
 	&__title {
         margin-bottom: 40px;
 
 		font-weight: 600;
-		font-size: 40px;
         line-height: 1.5;
 		color: $colorOrange;
         font-family: Jost, sans-serif;

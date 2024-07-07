@@ -3,7 +3,7 @@
 .deep {
 	padding: 40px 0 0;
 
-	@include minw($sm-pc) {
+	@include minw($lg) {
 		padding-top: 101px;
 		padding-bottom: 90px;
 	}
@@ -11,17 +11,15 @@
 	&__title {
 		margin-bottom: 20px;
 		font-weight: 600;
-		font-size: 26px;
 		color: $colorAsfalt;
 		font-family: Jost, sans-serif;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			margin-bottom: 60px;
-			font-size: 40px;
 		}
 	}
 	&__text {
 		display: none;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			display: flex;
 			flex-direction: column;
 			gap: 36px;
@@ -37,7 +35,7 @@
 		margin-top: 16px;
 		padding-top: 0;
 		padding-bottom: 0;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			display: none;
 		}
 	}
@@ -51,7 +49,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 36px;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			display: none;
 		}
 		p {
@@ -64,7 +62,7 @@
 	&__services {
 		display: none;
 
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			margin-top: 60px;
 			display: flex;
 			flex-wrap: wrap;
@@ -112,7 +110,7 @@
 	}
 	&__text-down {
 		display: none;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			display: block;
 			margin-top: 60px;
 			font-weight: 400;
@@ -143,7 +141,7 @@
 		height: 100%;
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 		background: linear-gradient(280deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			clip-path: polygon(26% 0, 100% 0, 100% 100%, 48% 100%);
 		}
 	}
@@ -158,7 +156,7 @@
 
 		color: $colorOrange;
 		font-family: Jost, sans-serif;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			font-size: 128px;
 		}
 	}
@@ -174,7 +172,7 @@
 		@include minw(375px) {
 			max-width: 293px;
 		}
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			max-width: 554px;
 			font-size: 40px;
 		}

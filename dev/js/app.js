@@ -68,3 +68,29 @@ const revitalize = new Swiper('.revitalize__swiper', {
 	spaceBetween: 20,
 	autoHeight: true,
 });
+
+const mainHow = new Swiper('.main-how__slider', {
+	slidesPerView: 'auto',
+	watchOverflow: true,
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+    spaceBetween: 20,
+	autoHeight: true,
+});
+
+const burgerMenuBtn = document.querySelector('.header__burger');
+const mobileMenuEl = document.querySelector('.header__mobile-menu');
+
+const toggleMobileMenu = ()=>{
+    mobileMenuEl.classList.contains('header__mobile-hide');
+    mobileMenuEl.classList.toggle('header__mobile-hide')
+}
+
+burgerMenuBtn.addEventListener('click', toggleMobileMenu)

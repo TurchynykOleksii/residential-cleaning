@@ -2,7 +2,7 @@
 
 .discount {
 	padding: 32px 0 40px;
-    @include minw($sm-pc) {
+    @include minw($lg) {
         padding: 90px 0;
     }
 	&__title {
@@ -14,13 +14,11 @@
 		gap: 10px;
 
 		font-weight: 600;
-		font-size: 26px;
 		color: $colorAsfalt;
 		font-family: Jost, sans-serif;
-        @include minw($sm-pc) {
+        @include minw($lg) {
 
             margin-bottom: 60px;
-            font-size: 40px;
         }
 	}
 	&__info {
@@ -30,7 +28,7 @@
 		img {
 			display: none;
 		}
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			img {
 				display: block;
 			}
@@ -41,7 +39,7 @@
 		font-weight: 400;
 		font-size: 16px;
 		color: $colorAsfalt;
-        @include minw($sm-pc) {
+        @include minw($lg) {
             font-size: 20px;
         }
 	}
@@ -62,7 +60,7 @@
 		img {
 			width: 100%;
 		}
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			display: none;
 		}
 	}

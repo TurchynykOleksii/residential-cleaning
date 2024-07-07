@@ -2,7 +2,7 @@
   display: none;
   padding: 90px 0;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .additional {
     display: block;
   }
@@ -10,7 +10,6 @@
 .additional__title {
   margin-bottom: 36px;
   font-weight: 600;
-  font-size: 40px;
   font-family: Jost, sans-serif;
   color: #383535;
 }

@@ -1,7 +1,7 @@
 .discount {
   padding: 32px 0 40px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .discount {
     padding: 90px 0;
   }
@@ -13,14 +13,12 @@
   justify-content: space-between;
   gap: 10px;
   font-weight: 600;
-  font-size: 26px;
   color: #383535;
   font-family: Jost, sans-serif;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .discount__title {
     margin-bottom: 60px;
-    font-size: 40px;
   }
 }
 .discount__info {
@@ -31,7 +29,7 @@
 .discount__info img {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .discount__info img {
     display: block;
   }
@@ -42,7 +40,7 @@
   font-size: 16px;
   color: #383535;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .discount p,
 .discount span {
     font-size: 20px;
@@ -65,7 +63,7 @@
 .discount__img-mob img {
   width: 100%;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .discount__img-mob {
     display: none;
   }

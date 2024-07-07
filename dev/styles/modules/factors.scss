@@ -4,7 +4,7 @@
 	padding-top: 80px;
 	padding-bottom: 40px;
 
-	@include minw($sm-pc) {
+	@include minw($lg) {
 		padding-top: 180px;
 		padding-bottom: 90px;
 	}
@@ -18,7 +18,7 @@
 		background-position: top;
 		background-size: 100% 236px;
 
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			padding: 46px 0;
 			background-size: cover;
 		}
@@ -38,7 +38,7 @@
 				rgba(255, 255, 255, 0.7) 100%
 			);
 			z-index: 2;
-			@include minw($sm-pc) {
+			@include minw($lg) {
 				height: 100%;
 				z-index: 0;
 			}
@@ -57,7 +57,7 @@
 			background-position: top;
 			background-size: cover;
 			z-index: 1;
-			@include minw($sm-pc) {
+			@include minw($lg) {
 				display: none;
 			}
 		}
@@ -68,16 +68,14 @@
 	&__title {
 		position: relative;
 		margin-bottom: 100px;
-		font-size: 26px;
 		font-weight: 600;
 		max-width: 353px;
 		font-family: Jost, sans-serif;
 		z-index: 3;
 
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			margin-bottom: 36px;
 			max-width: 100%;
-			font-size: 40px;
 		}
 	}
 	&__list {
@@ -90,7 +88,7 @@
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 1.5;
-        @include minw($sm-pc) {
+        @include minw($lg) {
             font-size: 20px;
         }
 	}

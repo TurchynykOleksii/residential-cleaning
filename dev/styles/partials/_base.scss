@@ -63,6 +63,9 @@ main {
     border: none;
 
     font-family: Jost, sans-serif;
+    &:hover{
+        cursor: pointer;
+    }
 }
 //===========================
 // Helpers
@@ -72,8 +75,11 @@ main {
 [class*="__container"] {
   margin: 0 auto;
   width: 100%;
-  max-width: rem($maxWidthContainer);
+  max-width: 353px;
   padding: 0 rem(calc($containerPadding/2));
+  @include minw(1440px) {
+    max-width: 1360px;
+}
 }
 
 .container-fuild {
@@ -251,4 +257,8 @@ main {
 
 [class*="__title"] {
     color: $colorAsfalt;
+    font-size: 26px;
+    @include minw($lg) {
+        font-size: 40px;
+    }
 }

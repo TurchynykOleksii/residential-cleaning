@@ -2,7 +2,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .hardware {
     padding-top: 90px;
     padding-bottom: 100px;
@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   gap: 36px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .hardware__titles {
     display: none;
   }
@@ -34,7 +34,7 @@
   width: 60px;
   height: 60px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .hardware__img img {
     width: 98px;
     height: 98px;
@@ -45,9 +45,9 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 30px 20px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .hardware__list {
     justify-content: space-between;
   }
@@ -68,7 +68,7 @@
   color: #f97f68;
   font-family: Jost, sans-serif;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .hardware__headline {
     display: block;
   }
@@ -81,7 +81,7 @@
   align-items: center;
   gap: 5px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .hardware__info {
     margin-bottom: 120px;
     max-width: 100%;
@@ -100,7 +100,7 @@
   font-size: 20px;
   font-family: Jost, sans-serif;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .hardware__name, .hardware__coasts {
     font-size: 24px;
   }

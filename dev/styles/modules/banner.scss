@@ -8,7 +8,7 @@
 	background-position: right;
 	background-size: cover;
 
-	@include minw($sm-pc) {
+	@include minw($lg) {
 		padding-top: 118px;
 		padding-bottom: 245px;
 	}
@@ -25,13 +25,13 @@
 		height: 100%;
 		clip-path: polygon(0 0, 100% 0, 53% 100%, 0% 100%);
 		background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			max-height: 728px;
 			clip-path: polygon(0 0, 73% 0, 53% 100%, 0% 100%);
 		}
 	}
 	&__inner {
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			margin-left: 55px;
 			max-width: 505px;
 		}
@@ -42,7 +42,7 @@
 		font-weight: 600;
 		font-size: 20px;
 
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			font-weight: 600;
 			font-size: 32px;
 		}
@@ -55,7 +55,7 @@
 		font-size: 40px;
 		line-height: 1.2;
 
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			margin-bottom: 120px;
 
 			font-weight: 600;
@@ -84,7 +84,7 @@
 			font-size: 16px;
 			line-height: 1.5;
 			text-transform: uppercase;
-			@include minw($sm-pc) {
+			@include minw($lg) {
 				font-size: 20px;
 			}
 		}
@@ -99,7 +99,7 @@
 	background-position: right;
 	background-size: cover;
 
-	@include minw($sm-pc) {
+	@include minw($lg) {
 		padding-top: 118px;
 		padding-bottom: 245px;
 	}
@@ -116,7 +116,7 @@
 		height: 100%;
 		clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
 		background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			max-height: 728px;
 			clip-path: polygon(0 0, 85% 0, 65% 100%, 0% 100%);
 		}
@@ -130,7 +130,7 @@
 		font-weight: 600;
 		font-size: 20px;
 
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			font-weight: 600;
 			font-size: 32px;
 		}
@@ -140,14 +140,13 @@
 		margin-bottom: 133px;
 		font-family: Jost, sans-serif;
 		font-weight: 600;
-		font-size: 40px;
 		line-height: 1.2;
 
-        @include minw($sm-pc) {
+        @include minw($lg) {
             max-width: 400px;
         }
 
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			margin-bottom: 120px;
             max-width: 789px;
 			font-weight: 600;
@@ -174,6 +173,9 @@
         @include maxw($mob) {
             margin: 0 auto;
         }
+        &:hover{
+            cursor: pointer;
+        }
 
 		span {
 			color: $colorWhite;
@@ -181,7 +183,7 @@
 			font-size: 16px;
 			line-height: 1.5;
 			text-transform: uppercase;
-			@include minw($sm-pc) {
+			@include minw($lg) {
 				font-size: 20px;
 			}
 		}

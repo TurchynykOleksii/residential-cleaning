@@ -2,18 +2,15 @@
 
 .about {
 	padding: 78px 0;
-	@include minw($sm-pc) {
+	@include minw($lg) {
 		padding: 180px 0;
 	}
 	&__title {
         margin-bottom: 26px;
 		font-family: Jost, sans-serif;
 		color: $colorAsfalt;
-        font-size: 20px;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			margin-bottom: 36px;
-
-			font-size: 40px;
 		}
 	}
 	&__text {
@@ -25,7 +22,7 @@
 			line-height: 1.5;
 
 			color: $colorAsfalt;
-            @include minw($sm-pc) {
+            @include minw($lg) {
                 font-size: 20px;
             }
 		}

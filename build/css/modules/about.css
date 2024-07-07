@@ -1,7 +1,7 @@
 .about {
   padding: 78px 0;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .about {
     padding: 180px 0;
   }
@@ -10,12 +10,10 @@
   margin-bottom: 26px;
   font-family: Jost, sans-serif;
   color: #383535;
-  font-size: 20px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .about__title {
     margin-bottom: 36px;
-    font-size: 40px;
   }
 }
 .about__text {
@@ -28,7 +26,7 @@
   line-height: 1.5;
   color: #383535;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .about__text p {
     font-size: 20px;
   }

@@ -3,7 +3,7 @@
 .subscribe {
 	padding: 40px 0 83px;
 
-	@include minw($sm-pc) {
+	@include minw($lg) {
 		padding: 90px 0 180px;
 	}
 	&__inner {
@@ -14,7 +14,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			padding: 100px 0;
 		}
 
@@ -40,7 +40,7 @@
                 width: 86%;
             }
 
-			@include minw($sm-pc) {
+			@include minw($lg) {
                 width: 90%;
 				background: linear-gradient(
 					90deg,
@@ -48,7 +48,7 @@
 					rgba(249, 127, 104, 40%) 50%
 				);
 			}
-			@include minw(1200px) {
+			@include minw($lg) {
                 width: 70%;
 				clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
 			}
@@ -63,7 +63,7 @@
 		@include maxw($mob) {
 			width: 100%;
 		}
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			max-width: 440px;
 		}
 	}
@@ -79,7 +79,7 @@
 		@include minw(375px) {
 			font-size: 32px;
 		}
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			max-width: 100%;
 			margin-bottom: 16px;
 			font-size: 50px;
@@ -95,7 +95,7 @@
 		letter-spacing: 0.04em;
 		color: $colorWhite;
 
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			max-width: 100%;
 			font-size: 24px;
 		}
@@ -121,13 +121,13 @@
 		background-color: rgba($color: $colorWhite, $alpha: 0.7);
 		backdrop-filter: blur(8px);
 		box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.07);
-		@include minw(375px) {
+		@include minw($lg) {
 			width: 111px;
 			height: 111px;
             right: 5px;
 		}
 
-		@include minw($tablet) {
+		@include minw($lg) {
 			position: static;
 			width: 276px;
 			height: 276px;
@@ -148,7 +148,7 @@
 		@include maxw($mob) {
 			max-width: none;
 		}
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			font-size: 20px;
 		}
 	}

@@ -4,7 +4,7 @@
 	padding-top: 40px;
 	padding-bottom: 40px;
 
-	@include minw($sm-pc) {
+	@include minw($lg) {
 		padding-top: 90px;
 		padding-bottom: 100px;
 	}
@@ -15,7 +15,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 36px;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			display: none;
 		}
 		& > .hardware__headline {
@@ -33,7 +33,7 @@
 		img {
 			width: 60px;
 			height: 60px;
-			@include minw($sm-pc) {
+			@include minw($lg) {
 				width: 98px;
 				height: 98px;
 			}
@@ -45,8 +45,8 @@
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 30px;
-		@include minw($sm-pc) {
+		gap: 30px 20px;
+		@include minw($lg) {
 			justify-content: space-between;
 		}
 	}
@@ -70,7 +70,7 @@
 
 		color: $colorOrange;
 		font-family: Jost, sans-serif;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			display: block;
 		}
 	}
@@ -82,7 +82,7 @@
 		align-items: center;
 		gap: 5px;
 
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			margin-bottom: 120px;
 			max-width: 100%;
 			gap: 16px;
@@ -100,7 +100,7 @@
 		font-weight: 500;
 		font-size: 20px;
 		font-family: Jost, sans-serif;
-		@include minw($sm-pc) {
+		@include minw($lg) {
 			font-size: 24px;
 		}
 	}
