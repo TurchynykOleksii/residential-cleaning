@@ -94,7 +94,7 @@
   padding-bottom: 55px;
   background-image: url("../../img/cover/main-banner-bg.jpg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: cover;
 }
 @media only screen and (min-width: 1440px) {
@@ -140,7 +140,7 @@
 }
 .main-banner__title {
   max-width: 288px;
-  margin-bottom: 133px;
+  margin-bottom: 276px;
   font-family: Jost, sans-serif;
   font-weight: 600;
   line-height: 1.2;

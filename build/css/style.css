@@ -550,6 +550,7 @@ form label {
   padding: 10px;
   position: absolute;
   top: 100%;
+  left: 11px;
   background-color: #fff;
   z-index: -1;
   transition: top 250ms ease;
@@ -658,7 +659,7 @@ form label {
   padding-bottom: 55px;
   background-image: url("../../img/cover/main-banner-bg.jpg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: cover;
 }
 @media only screen and (min-width: 1440px) {
@@ -704,7 +705,7 @@ form label {
 }
 .main-banner__title {
   max-width: 288px;
-  margin-bottom: 133px;
+  margin-bottom: 276px;
   font-family: Jost, sans-serif;
   font-weight: 600;
   line-height: 1.2;
@@ -2224,6 +2225,7 @@ input.feetback__grey {
 .main-our__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 38px;
 }
 @media only screen and (min-width: 1440px) {
