@@ -9,18 +9,28 @@
 	&__subtitle {
 		margin-bottom: 60px;
 		font-family: Amethysta, sans-serif;
+
 		font-weight: 400;
-		font-size: 20px;
-		line-height: 150%;
+		font-size: 14px;
+
+		line-height: 1.5;
+		@include minw($lg) {
+			font-size: 20px;
+		}
 	}
 	&__list {
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
 	}
+
 	&__info {
 		display: flex;
 		gap: 20px;
+		flex-direction: column;
+		@include minw($lg) {
+			flex-direction: row;
+		}
 	}
 	&__img {
 		img {

@@ -9,7 +9,11 @@
 	&__info {
 		display: flex;
 		align-items: center;
+		flex-direction: column-reverse;
 		gap: 48px;
+		@include minw($lg) {
+			flex-direction: row;
+		}
 	}
 	&__text {
 		max-width: 472px;
@@ -25,9 +29,11 @@
 	&__bttn {
 		font-family: Jost, sans-serif;
 		font-weight: 600;
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 1.5;
 		text-transform: uppercase;
+        @include minw($lg) {
+        font-size: 20px;}
 	}
 	&__img {
 		max-width: 748px;

@@ -1,4 +1,9 @@
-.banner {
+.banner,
+.banner-c,
+.banner-a,
+.banner-arb,
+.banner-move,
+.banner-blog {
   position: relative;
   padding-bottom: 55px;
   background-image: url("../../img/general/banner.jpg");
@@ -7,12 +12,22 @@
   background-size: cover;
 }
 @media only screen and (min-width: 1440px) {
-  .banner {
+  .banner,
+.banner-c,
+.banner-a,
+.banner-arb,
+.banner-move,
+.banner-blog {
     padding-top: 118px;
     padding-bottom: 245px;
   }
 }
-.banner:before {
+.banner:before,
+.banner-c:before,
+.banner-a:before,
+.banner-arb:before,
+.banner-move:before,
+.banner-blog:before {
   content: "";
   position: absolute;
   top: 0;
@@ -25,30 +40,55 @@
   background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
 @media only screen and (min-width: 1440px) {
-  .banner:before {
+  .banner:before,
+.banner-c:before,
+.banner-a:before,
+.banner-arb:before,
+.banner-move:before,
+.banner-blog:before {
     max-height: 728px;
     clip-path: polygon(0 0, 73% 0, 53% 100%, 0% 100%);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .banner__inner {
+  .banner__inner,
+.banner-c__inner,
+.banner-a__inner,
+.banner-arb__inner,
+.banner-move__inner,
+.banner-blog__inner {
     margin-left: 55px;
     max-width: 505px;
   }
 }
-.banner__headline {
+.banner__headline,
+.banner-c__headline,
+.banner-a__headline,
+.banner-arb__headline,
+.banner-move__headline,
+.banner-blog__headline {
   margin-bottom: 6px;
   font-family: Jost, sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
 @media only screen and (min-width: 1440px) {
-  .banner__headline {
+  .banner__headline,
+.banner-c__headline,
+.banner-a__headline,
+.banner-arb__headline,
+.banner-move__headline,
+.banner-blog__headline {
     font-weight: 600;
     font-size: 32px;
   }
 }
-.banner__title {
+.banner__title,
+.banner-c__title,
+.banner-a__title,
+.banner-arb__title,
+.banner-move__title,
+.banner-blog__title {
   max-width: 264px;
   margin-bottom: 277px;
   font-family: Jost, sans-serif;
@@ -57,14 +97,24 @@
   line-height: 1.2;
 }
 @media only screen and (min-width: 1440px) {
-  .banner__title {
+  .banner__title,
+.banner-c__title,
+.banner-a__title,
+.banner-arb__title,
+.banner-move__title,
+.banner-blog__title {
     margin-bottom: 120px;
     font-weight: 600;
     font-size: 96px;
     line-height: 1.04;
   }
 }
-.banner__btn {
+.banner__btn,
+.banner-c__btn,
+.banner-a__btn,
+.banner-arb__btn,
+.banner-move__btn,
+.banner-blog__btn {
   max-width: 353px;
   margin: 0 auto;
   width: 100%;
@@ -76,7 +126,12 @@
   background-color: #f97f68;
   border: none;
 }
-.banner__btn span {
+.banner__btn span,
+.banner-c__btn span,
+.banner-a__btn span,
+.banner-arb__btn span,
+.banner-move__btn span,
+.banner-blog__btn span {
   color: #fff;
   font-weight: 600;
   font-size: 16px;
@@ -84,7 +139,12 @@
   text-transform: uppercase;
 }
 @media only screen and (min-width: 1440px) {
-  .banner__btn span {
+  .banner__btn span,
+.banner-c__btn span,
+.banner-a__btn span,
+.banner-arb__btn span,
+.banner-move__btn span,
+.banner-blog__btn span {
     font-size: 20px;
   }
 }
@@ -191,5 +251,70 @@
 @media only screen and (min-width: 1440px) {
   .main-banner__btn span {
     font-size: 20px;
+  }
+}
+
+.banner-c {
+  background-image: url("../../img/general/commercial-bg.jpg");
+}
+
+.banner-a {
+  background-image: url("../../img/general/advanced-bg.jpg");
+}
+@media only screen and (min-width: 1440px) {
+  .banner-a:before {
+    clip-path: polygon(0 0, 76% 0, 60% 100%, 0% 100%);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .banner-a__inner {
+    max-width: 846px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .banner-a__title {
+    max-width: 846px !important;
+  }
+}
+
+.banner-arb {
+  background-image: url("../../img/general/arbnb-bg.jpg");
+}
+
+.banner-move {
+  background-image: url("../../img/general/move-bg.jpg");
+  background-position: top;
+}
+@media only screen and (min-width: 1440px) {
+  .banner-move__inner {
+    max-width: 846px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .banner-move__title {
+    max-width: 846px;
+  }
+}
+
+.banner-blog {
+  background-image: url("../../img/general/blog-bg.jpg");
+}
+.banner-blog:before {
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+}
+@media only screen and (min-width: 1440px) {
+  .banner-blog:before {
+    max-height: 728px;
+    clip-path: polygon(0 0, 85% 0, 65% 100%, 0% 100%);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .banner-blog__inner {
+    max-width: 846px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .banner-blog__title {
+    max-width: 846px;
   }
 }

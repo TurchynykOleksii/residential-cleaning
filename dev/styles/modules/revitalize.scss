@@ -53,8 +53,11 @@
 		margin-bottom: 36px;
 		font-family: Jost, sans-serif;
 		font-weight: 500;
-		font-size: 32px;
+		font-size: 20px;
 		color: $colorOrange;
+        @include minw($lg) {
+            font-size: 32px;
+        }
 	}
 	&__list {
 		max-width: 319px;
@@ -62,6 +65,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+        
 	}
 	&__item {
 		display: flex;
@@ -69,7 +73,10 @@
 		position: relative;
 		font-family: Amethysta, sans-serif;
 		font-weight: 400;
-		font-size: 20px;
+		font-size: 14px;
+		@include minw($lg) {
+			font-size: 20px;
+		}
 		&:before {
 			flex-shrink: 0;
 			content: '';

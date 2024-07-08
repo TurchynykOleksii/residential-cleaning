@@ -1,5 +1,10 @@
 .main-how {
-  padding: 180px 0;
+  padding: 40px 0;
+}
+@media only screen and (min-width: 1440px) {
+  .main-how {
+    padding: 180px 0;
+  }
 }
 .main-how h2 {
   margin-bottom: 60px;

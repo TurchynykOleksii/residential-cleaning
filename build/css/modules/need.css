@@ -6,7 +6,13 @@
 .need__info {
   display: flex;
   align-items: center;
+  flex-direction: column-reverse;
   gap: 48px;
+}
+@media only screen and (min-width: 1440px) {
+  .need__info {
+    flex-direction: row;
+  }
 }
 .need__text {
   max-width: 472px;
@@ -21,9 +27,14 @@
 .need__bttn {
   font-family: Jost, sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 1440px) {
+  .need__bttn {
+    font-size: 20px;
+  }
 }
 .need__img {
   max-width: 748px;

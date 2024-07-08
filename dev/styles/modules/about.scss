@@ -1,12 +1,12 @@
 @import '../core';
 
-.about {
+.about,.about-c {
 	padding: 78px 0;
 	@include minw($lg) {
 		padding: 180px 0;
 	}
 	&__title {
-        margin-bottom: 26px;
+		margin-bottom: 26px;
 		font-family: Jost, sans-serif;
 		color: $colorAsfalt;
 		@include minw($lg) {
@@ -22,9 +22,112 @@
 			line-height: 1.5;
 
 			color: $colorAsfalt;
-            @include minw($lg) {
-                font-size: 20px;
-            }
+			@include minw($lg) {
+				font-size: 20px;
+			}
 		}
+	}
+}
+.why-choose__inner h3 {
+	margin-bottom: 20px;
+	font-family: Jost, sans-serif;
+}
+.why-choose__text {
+	margin-bottom: 20px;
+	p {
+		font-family: Amethysta, sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+}
+.why-choose__item {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+.why-choose__list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.why-choose__info {
+	strong {
+		font-family: Jost, sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+	p {
+		font-family: Amethysta, sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+	}
+}
+.about-s {
+	&__title {
+		display: none;
+		margin-bottom: 36px;
+		font-family: Jost, sans-serif;
+		@include minw($lg) {
+			display: block;
+		}
+	}
+	&__info {
+		padding: 60px 0 0;
+		background-image: url('../../img/cover/why-bg.jpg');
+
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: 476px 272px;
+		@include minw($lg) {
+			padding: 80px 0;
+			background-position: center;
+			background-size: cover;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 75%;
+			height: 100%;
+			clip-path: polygon(0 0, 100% 0, 62% 100%, 0% 100%);
+			background: linear-gradient(
+				90deg,
+				rgba(255, 255, 255, 0.8) 0%,
+				rgba(255, 255, 255, 0.8) 100%
+			);
+			height: 100%;
+			z-index: 0;
+			@include minw($lg) {
+				width: 60%;
+			}
+		}
+	}
+	&__headline,
+	&__text {
+		@include minw($lg) {
+			max-width: 508px;
+		}
+	}
+	&__headline {
+		max-width: 225px;
+		margin-bottom: 76px;
+		font-family: Jost, sans-serif;
+		font-weight: 500;
+		font-size: 26px;
+		@include minw($lg) {
+			margin-bottom: 16px;
+			font-size: 32px;
+		}
+	}
+	&__text {
+		font-family: Jost, sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.5;
 	}
 }

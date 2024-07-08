@@ -11,41 +11,56 @@
 	}
 	&__item {
 		display: flex;
-        border-top: 1px solid black;
+		border-top: 1px solid black;
 		p,
 		span {
-			padding: 12px;
+			padding: 11px;
 			font-family: Jost, sans-serif;
 			font-weight: 500;
-			font-size: 24px;
+			font-size: 14px;
+            line-height: 1.5;
+            @include minw($lg) {
+                font-size: 24px;
+            }
 			&:first-child {
-				max-width: 608px;
-				min-width: 608px;
+				min-width: 176px;
+				max-width: 176px;
 				width: 100%;
 				border-right: 1px solid black;
 				border-left: 1px solid black;
+				@include minw($lg) {
+					max-width: 608px;
+					min-width: 608px;
+				}
 			}
 			&:last-child {
-				max-width: 292px;
-				min-width: 292px;
+				max-width: 176px;
+				min-width: 176px;
 				width: 100%;
-                border-right: 1px solid black;
-                text-align: right;
+				border-right: 1px solid black;
+				text-align: right;
+				@include minw($lg) {
+					max-width: 292px;
+					min-width: 292px;
+				}
 			}
 		}
 		&-headline {
 			span {
 				font-family: Jost, sans-serif;
 				font-weight: 500;
-				font-size: 32px;
+				font-size: 19px;
 				color: $colorOrange;
-                &:last-child{
-                    text-align-last: left;
-                }
+				@include minw($lg) {
+					font-size: 32px;
+				}
+				&:last-child {
+					text-align-last: left;
+				}
 			}
 		}
-        &:last-child{
-            border-bottom: 1px solid black;
-        }
+		&:last-child {
+			border-bottom: 1px solid black;
+		}
 	}
 }

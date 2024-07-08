@@ -1,6 +1,11 @@
 @import '../core';
 
-.banner {
+.banner,
+.banner-c,
+.banner-a,
+.banner-arb,
+.banner-move,
+.banner-blog {
 	position: relative;
 	padding-bottom: 55px;
 	background-image: url('../../img/general/banner.jpg');
@@ -109,7 +114,6 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-
 		display: block;
 		width: 100%;
 		max-height: 264px;
@@ -120,9 +124,9 @@
 			max-height: 728px;
 			clip-path: polygon(0 0, 85% 0, 65% 100%, 0% 100%);
 		}
-        @include minw(1200px) {
-            clip-path: polygon(0 0, 75% 0, 60% 100%, 0% 100%);
-        }
+		@include minw(1200px) {
+			clip-path: polygon(0 0, 75% 0, 60% 100%, 0% 100%);
+		}
 	}
 	&__headline {
 		margin-bottom: 6px;
@@ -142,13 +146,13 @@
 		font-weight: 600;
 		line-height: 1.2;
 
-        @include minw($lg) {
-            max-width: 400px;
-        }
+		@include minw($lg) {
+			max-width: 400px;
+		}
 
 		@include minw($lg) {
 			margin-bottom: 120px;
-            max-width: 789px;
+			max-width: 789px;
 			font-weight: 600;
 			font-size: 94px;
 			line-height: 1.04;
@@ -170,12 +174,12 @@
 		background-color: $colorOrange;
 
 		border: none;
-        @include maxw($mob) {
-            margin: 0 auto;
-        }
-        &:hover{
-            cursor: pointer;
-        }
+		@include maxw($mob) {
+			margin: 0 auto;
+		}
+		&:hover {
+			cursor: pointer;
+		}
 
 		span {
 			color: $colorWhite;
@@ -186,6 +190,66 @@
 			@include minw($lg) {
 				font-size: 20px;
 			}
+		}
+	}
+}
+.banner-c {
+	background-image: url('../../img/general/commercial-bg.jpg');
+}
+.banner-a {
+	background-image: url('../../img/general/advanced-bg.jpg');
+	&:before {
+		@include minw($lg) {
+			clip-path: polygon(0 0, 76% 0, 60% 100%, 0% 100%);
+		}
+	}
+	&__inner {
+		@include minw($lg) {
+			max-width: 846px;
+		}
+	}
+	&__title {
+		@include minw($lg) {
+			max-width: 846px !important;
+		}
+	}
+}
+.banner-arb {
+	background-image: url('../../img/general/arbnb-bg.jpg');
+}
+.banner-move {
+	background-image: url('../../img/general/move-bg.jpg');
+	background-position: top;
+	&__inner {
+		@include minw($lg) {
+			max-width: 846px;
+		}
+	}
+	&__title {
+		@include minw($lg) {
+			max-width: 846px;
+		}
+	}
+}
+.banner-blog {
+	background-image: url('../../img/general/blog-bg.jpg');
+
+	&:before {
+		clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+		@include minw($lg) {
+			max-height: 728px;
+			clip-path: polygon(0 0, 85% 0, 65% 100%, 0% 100%);
+		}
+	}
+
+	&__inner {
+		@include minw($lg) {
+			max-width: 846px;
+		}
+	}
+	&__title {
+		@include minw($lg) {
+			max-width: 846px;
 		}
 	}
 }

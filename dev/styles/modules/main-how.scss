@@ -1,7 +1,10 @@
 @import '../core';
 
 .main-how {
-	padding: 180px 0;
+    padding: 40px 0;
+	@include minw($lg) {
+		padding: 180px 0;
+	}
 	h2 {
 		margin-bottom: 60px;
 		font-weight: 600;
@@ -29,20 +32,20 @@
 	&__card {
 		padding: 27px 10px;
 		background: rgba(90, 195, 176, 0.7);
-        min-height: 353px;
+		min-height: 353px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 24px;
 		overflow: hidden;
-        box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.25);
+		box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.25);
 		img {
 			max-width: 153px;
 		}
-        &:hover{
-            cursor: pointer;
-        }
+		&:hover {
+			cursor: pointer;
+		}
 		&-first {
 			position: relative;
 			&:before {
@@ -123,10 +126,10 @@
 	}
 }
 .swiper-pagination {
-    margin-top: 36px;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
+	margin-top: 36px;
+	display: flex;
+	justify-content: center;
+	gap: 16px;
 }
 .swiper-pagination-bullet {
 	display: block;
@@ -135,6 +138,6 @@
 	background-color: #d9d9d9;
 	border-radius: 50%;
 }
-.swiper-pagination-bullet-active{
-    background-color: rgba(90, 195, 176, 0.7);
-} 
+.swiper-pagination-bullet-active {
+	background-color: rgba(90, 195, 176, 0.7);
+}
