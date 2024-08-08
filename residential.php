@@ -1,70 +1,17 @@
-<!DOCTYPE html>
-<html lang="ru">
+<?php
+/*
+Template Name: residential tamplate
+*/
+ get_header(); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Residential Cleaning</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="css/libs/swiper.css">
-</head>
-
-<body>
-
-    <!-- Add autoHide class to automatically hide the header on scroll -->
-    <header class="header">
-        <div class="header__logo-phone">
-            <div class="container">
-                <div class="header__inner">
-                    <button class="header__burger">
-                        <img src="../img/icons/burger.svg" alt="burger menu icons">
-                    </button>
-                    <a href="/" class="header__logo"><img src="../img/icons/logo.svg" alt="logo icon"></a>
-                    <a href="tel:14378684158" class="header__phone">
-                        <div class="header__logo-icon">
-                            <img src="../img/icons/phone-white.svg" alt="phone icon">
-                        </div>
-                        <span>1(437)868-4158</span>
-                    </a>
-                </div>
-                <ul class="header__mobile-menu header__mobile-hide">
-                    <li class="header__mobile-item"><a href="residential.html">Residental Cleaning</a></li>
-                    <li class="header__mobile-item"><a href="commercial.html">Commercial Cleaning </a></li>
-                    <li class="header__mobile-item"><a href="advanced.html">Power Cleaning</a></li>
-                    <li class="header__mobile-item"><a href="airbnb.html">Airbnb</a></li>
-                    <li class="header__mobile-item"><a href="move-in-move-out.html">Move In /Move Out</a></li>
-                    <li class="header__mobile-item"><a href="contacts.html">Post-Constructionƒ</a></li>
-                </ul>
-            </div>
-        </div>
-            
-        <div class="header__navigation">
-            <div class="container">
-                <nav class="header__nav">
-                    <ul class="header__list">
-                        <li class="header__item header__item-hide"><a href="/">Home</a></li>
-                        <li class="header__item header__item-hide"><a href="/#main-our">Services </a></li>
-                        <li class="header__item header__item-hide"><a href="advanced.html">Advanced Solutions</a></li>
-                        <li class="header__item"><a href="about-us.html">About Us</a></li>
-                        <li class="header__item"><a href="online-booking.html">Book Online</a></li>
-                        <li class="header__item"><a href="contacts.html">Contacts</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-    </header>
-
-    <main class="main">
+<main class="main">
 
 <section class="banner">
     <div class="container">
         <div class="banner__inner">
             <p class="banner__headline">Experience the Difference: </p>
             <h1 class="banner__title">Residential Cleaning</h1>
-            <button class="banner__btn"><span>Call now</span> <img src="../img/icons/arrow-right-white.svg" alt="icon arrow"></button>
+            <button class="banner__btn"><span>Call now</span> <img src="<?=get_template_directory_uri() ?>/build/img/icons/arrow-right-white.svg" alt="icon arrow"></button>
         </div>
     </div>
 </section>
@@ -114,9 +61,9 @@
                         <div class="prices__num">1</div>
                         <ul class="prices__info">
                             <li class="prices__info-item">Bedroom</li>
-                            <li class="prices__info-item"><img src="../img/icons/bigger.svg" alt="biggest icon">
+                            <li class="prices__info-item"><img src="<?=get_template_directory_uri() ?>/build/img/icons/bigger.svg" alt="biggest icon">
                                 < 45 m</li>
-                            <li class="prices__info-item"><img src="../img/icons/clock.svg" alt="clock icon">~ 2,5
+                            <li class="prices__info-item"><img src="<?=get_template_directory_uri() ?>/build/img/icons/clock.svg" alt="clock icon">~ 2,5
                                 hour’s</li>
                             <li class="prices__info-item prices__coast">from CA$140</li>
                         </ul>
@@ -125,9 +72,9 @@
                         <div class="prices__num">2</div>
                         <ul class="prices__info">
                             <li class="prices__info-item">Bedroom</li>
-                            <li class="prices__info-item"><img src="../img/icons/bigger.svg" alt="biggest icon">
+                            <li class="prices__info-item"><img src="<?=get_template_directory_uri() ?>/build/img/icons/bigger.svg" alt="biggest icon">
                                 < 45 m</li>
-                            <li class="prices__info-item"><img src="../img/icons/clock.svg" alt="clock icon">~ 2,5
+                            <li class="prices__info-item"><img src="<?=get_template_directory_uri() ?>/build/img/icons/clock.svg" alt="clock icon">~ 2,5
                                 hour’s</li>
                             <li class="prices__info-item prices__coast">from CA$140</li>
                         </ul>
@@ -136,9 +83,9 @@
                         <div class="prices__num">3</div>
                         <ul class="prices__info">
                             <li class="prices__info-item">Bedroom</li>
-                            <li class="prices__info-item"><img src="../img/icons/bigger.svg" alt="biggest icon">
+                            <li class="prices__info-item"><img src="<?=get_template_directory_uri() ?>/build/img/icons/bigger.svg" alt="biggest icon">
                                 < 45 m</li>
-                            <li class="prices__info-item"><img src="../img/icons/clock.svg" alt="clock icon">~ 2,5
+                            <li class="prices__info-item"><img src="<?=get_template_directory_uri() ?>/build/img/icons/clock.svg" alt="clock icon">~ 2,5
                                 hour’s</li>
                             <li class="prices__info-item prices__coast">from CA$140</li>
                         </ul>
@@ -147,9 +94,9 @@
                         <div class="prices__num">4</div>
                         <ul class="prices__info">
                             <li class="prices__info-item">Bedroom</li>
-                            <li class="prices__info-item"><img src="../img/icons/bigger.svg" alt="biggest icon">
+                            <li class="prices__info-item"><img src="<?=get_template_directory_uri() ?>/build/img/icons/bigger.svg" alt="biggest icon">
                                 < 45 m</li>
-                            <li class="prices__info-item"><img src="../img/icons/clock.svg" alt="clock icon">~ 2,5
+                            <li class="prices__info-item"><img src="<?=get_template_directory_uri() ?>/build/img/icons/clock.svg" alt="clock icon">~ 2,5
                                 hour’s</li>
                             <li class="prices__info-item prices__coast">from CA$140</li>
                         </ul>
@@ -157,7 +104,7 @@
                 </ul>
                 <ul class="prices__list prices__commercial prices__hide">
                     <li class="prices__item">
-                        <div class="prices__num"><img src="../img/icons/comercial-icon.svg" alt="commercial icon"></div>
+                        <div class="prices__num"><img src="<?=get_template_directory_uri() ?>/build/img/icons/comercial-icon.svg" alt="commercial icon"></div>
                         <ul class="prices__info">
                             <li class="prices__info-item">Square</li>
                             <li class="prices__info-item">
@@ -167,7 +114,7 @@
                         </ul>
                     </li>
                     <li class="prices__item">
-                        <div class="prices__num"><img src="../img/icons/comercial-icon.svg" alt="commercial icon"></div>
+                        <div class="prices__num"><img src="<?=get_template_directory_uri() ?>/build/img/icons/comercial-icon.svg" alt="commercial icon"></div>
                         <ul class="prices__info">
                             <li class="prices__info-item">Square</li>
                             <li class="prices__info-item">
@@ -177,7 +124,7 @@
                         </ul>
                     </li>
                     <li class="prices__item">
-                        <div class="prices__num"><img src="../img/icons/comercial-icon.svg" alt="commercial icon"></div>
+                        <div class="prices__num"><img src="<?=get_template_directory_uri() ?>/build/img/icons/comercial-icon.svg" alt="commercial icon"></div>
                         <ul class="prices__info">
                             <li class="prices__info-item">Square</li>
                             <li class="prices__info-item">
@@ -187,7 +134,7 @@
                         </ul>
                     </li>
                     <li class="prices__item">
-                        <div class="prices__num"><img src="../img/icons/comercial-icon.svg" alt="commercial icon"></div>
+                        <div class="prices__num"><img src="<?=get_template_directory_uri() ?>/build/img/icons/comercial-icon.svg" alt="commercial icon"></div>
                         <ul class="prices__info">
                             <li class="prices__info-item">Square</li>
                             <li class="prices__info-item">
@@ -197,7 +144,7 @@
                         </ul>
                     </li>
                     <li class="prices__item">
-                        <div class="prices__num"><img src="../img/icons/comercial-icon.svg" alt="commercial icon"></div>
+                        <div class="prices__num"><img src="<?=get_template_directory_uri() ?>/build/img/icons/comercial-icon.svg" alt="commercial icon"></div>
                         <ul class="prices__info">
                             <li class="prices__info-item">Square</li>
                             <li class="prices__info-item">
@@ -209,11 +156,11 @@
                 </ul>
             </div>
             <div class="prices__bttns">
-                <button class="prices__btn hide__mobile">see more <img src="../img/icons/arrow-right-white.svg"
+                <button class="prices__btn hide__mobile">see more <img src="<?=get_template_directory_uri() ?>/build/img/icons/arrow-right-white.svg"
                         alt="icon arrow"></button>
-                <button class="prices__btn hide__mobile">GET A QUOATE <img src="../img/icons/arrow-right-white.svg"
+                <button class="prices__btn hide__mobile">GET A QUOATE <img src="<?=get_template_directory_uri() ?>/build/img/icons/arrow-right-white.svg"
                         alt="icon arrow"></button>
-                <button class="prices__btn hide__pc">See more Info <img src="../img/icons/arrow-right-white.svg"
+                <button class="prices__btn hide__pc">See more Info <img src="<?=get_template_directory_uri() ?>/build/img/icons/arrow-right-white.svg"
                         alt="icon arrow"></button>
             </div>
         </div>
@@ -277,7 +224,7 @@
                     <span class="hardware__headline">Kitchen</span>
                     <div class="hardware__info">
                         <div class="hardware__img">
-                            <img src="../img/icons/icon-oven.svg" alt="icon oven">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-oven.svg" alt="icon oven">
                         </div>
                         <div class="hardware__text">
                             <span class="hardware__name">Oven</span>
@@ -286,7 +233,7 @@
                     </div>
                     <div class="hardware__info">
                         <div class="hardware__img">
-                            <img src="../img/icons/icon-refrig.svg" alt="icon Refrigerator">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-refrig.svg" alt="icon Refrigerator">
                         </div>
                         <div class="hardware__text">
                             <span class="hardware__name">Refrigerator</span>
@@ -298,7 +245,7 @@
                     <span class="hardware__headline">Bathroom</span>
                     <div class="hardware__info">
                         <div class="hardware__img">
-                            <img src="../img/icons/icon-hood.svg" alt="icon hood">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-hood.svg" alt="icon hood">
                         </div>
                         <div class="hardware__text">
                             <span class="hardware__name">Hood</span>
@@ -307,7 +254,7 @@
                     </div>
                     <div class="hardware__info">
                         <div class="hardware__img">
-                            <img src="../img/icons/icon-dish.svg" alt="icon oven">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-dish.svg" alt="icon oven">
                         </div>
                         <div class="hardware__text">
                             <span class="hardware__name">Load Dish Washer</span>
@@ -319,7 +266,7 @@
                     <span class="hardware__headline">Bedroom</span>
                     <div class="hardware__info">
                         <div class="hardware__img">
-                            <img src="../img/icons/icon-microwave.svg" alt="icon Microwave">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-microwave.svg" alt="icon Microwave">
                         </div>
                         <div class="hardware__text">
                             <span class="hardware__name">Microwave</span>
@@ -328,7 +275,7 @@
                     </div>
                     <div class="hardware__info">
                         <div class="hardware__img">
-                            <img src="../img/icons/icon-cabinets.svg" alt="icon Cabinets">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-cabinets.svg" alt="icon Cabinets">
                         </div>
                         <div class="hardware__text">
                             <span class="hardware__name">Cabinets</span>
@@ -340,7 +287,7 @@
                     <span class="hardware__headline">Other</span>
                     <div class="hardware__info">
                         <div class="hardware__img">
-                            <img src="../img/icons/icon-grille.svg" alt="icon Grill">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-grille.svg" alt="icon Grill">
                         </div>
                         <div class="hardware__text">
                             <span class="hardware__name">Grill</span>
@@ -349,7 +296,7 @@
                     </div>
                     <div class="hardware__info">
                         <div class="hardware__img">
-                            <img src="../img/icons/icon-other.svg" alt="icon other">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-other.svg" alt="icon other">
                         </div>
                         <div class="hardware__text">
                             <span class="hardware__name">Other</span>
@@ -357,7 +304,7 @@
                     </div>
                 </li>
             </ul>
-            <a href="#" class="hardware__link bttn">to Calculator <img src="../img/icons/arrow-right-white.svg"
+            <a href="#" class="hardware__link bttn">to Calculator <img src="<?=get_template_directory_uri() ?>/build/img/icons/arrow-right-white.svg"
                     alt="icon arrow"></a>
         </div>
 </section>
@@ -495,10 +442,10 @@
     <div class="container">
         <div class="discount__inner">
             <h5 class="discount__title">How to get discount? <div class="discount__img-mob"><img
-                        src="../img/general/procent.png" alt="discount image"></div>
+                        src="<?=get_template_directory_uri() ?>/build/img/general/procent.png" alt="discount image"></div>
             </h5>
             <div class="discount__info">
-                <img src="../img/general/procent.png" alt="discount image">
+                <img src="<?=get_template_directory_uri() ?>/build/img/general/procent.png" alt="discount image">
                 <p>
                     <span>How can you avail of discounts? Explore these dependable methods:</span>
                     Receive a 5% cashback by providing transparent feedback on our cleaning or any other services.Get a
@@ -518,34 +465,15 @@
                 <div class="feetback__form-wrapper">
                     <h5>Quick callback order</h5>
                     <p>Please enter your details and we will call you</p>
-                    <form class="feetback__form">
-                        <div class="feetback__form-wrap">
-                            <label class="feetback__name feetback__label">
-                                <input type="text" name="Name">
-                                <span>Name</span>
-                            </label>
-                            <label class="feetback__number feetback__label">
-                                <input type="text" name="Phone">
-                                <span>Phone number</span>
-                            </label>
-                        </div>
+                    <?php echo do_shortcode( '[contact-form-7 id="b59dd04" title="Call back" html_class="feetback__form"]')?>
 
-                        <label class="feetback__message feetback__label">
-                            <input name="text" name="Info">
-                            <span>Message</span>
-                        </label>
-                        <label class="feetback__submit-wrap">
-                            send
-                            <input type="submit" value="send" class="feetback__submit">
-                        </label>
-                    </form>
                 </div>
                 <div class="feetback__info">
                     <h6>Get a qoute</h6>
                     <p>Say goodbye to dirt and grime and hello to a fresh, revitalized space! Whether you're preparing
                         for a special event, moving into a new home, or simply craving a pristine environment, our
                         cleaning service is the solution you've been searching for.</p>
-                    <a href="#" class="bttn feetback__btn">Request service <img src="../img/icons/arrow-right-white.svg"
+                    <a href="#" class="bttn feetback__btn">Request service <img src="<?=get_template_directory_uri() ?>/build/img/icons/arrow-right-white.svg"
                             alt="arrow icon"></a>
                 </div>
             </div>
@@ -563,19 +491,19 @@
                         professional cleaners. They were thorough, efficient, and paid close attention to detail.</p>
                     <ul class="customers__stars">
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                     </ul>
                 </li>
@@ -585,19 +513,19 @@
                         clean and fresh everything looked. The team was friendly, professional.</p>
                     <ul class="customers__stars">
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                     </ul>
                 </li>
@@ -607,19 +535,19 @@
                         recommend this service to anyone looking for a top-notch cleaning experience.</p>
                     <ul class="customers__stars">
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                         <li class="customers__star">
-                            <img src="../img/icons/icon-star.svg" alt="icon star">
+                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/icon-star.svg" alt="icon star">
                         </li>
                     </ul>
                 </li>
@@ -637,7 +565,7 @@
                         cleanliness
                         of your home!</p>
                     <a href="#" class="subscribe__btn bttn">Request service <img
-                            src="../img/icons/icon-arrow-orange.svg" alt="icon arrow"></a>
+                            src="<?=get_template_directory_uri() ?>/build/img/icons/icon-arrow-orange.svg" alt="icon arrow"></a>
                 </div>
                 <div class="subscribe__discount">-10%</div>
             </div>
@@ -648,66 +576,4 @@
 
 </main>
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer__inner">
-            <ul class="footer__menu">
-                <li class="footer__menu-item">
-                    <a href="#">Home</a>
-                </li>
-                <li class="footer__menu-item">
-                    <a href="#">Services</a>
-                </li>
-                <li class="footer__menu-item">
-                    <a href="#">About us</a>
-                </li>
-                <li class="footer__menu-item">
-                    <a href="#">Book online</a>
-                </li>
-                <li class="footer__menu-item">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-            <address class="footer__address">
-                <ul class="footer__adress-list">
-                    <li class="footer__address-item">
-                        <img src="../img/icons/icon-phone-ft.svg" alt="icon phone">
-                        <a href="tel:+14378684158">1(437)868-4158</a>
-                    </li>
-                    <li class="footer__address-item">
-                        <img src="../img/icons/icon-mail.svg" alt="icon mail">
-
-                        <a href="mailto:mail@email.com">mail@email.com</a>
-                    </li>
-                    <li class="footer__address-item">
-                        <img src="../img/icons/icon-map.svg" alt="icon map">
-
-                        4140 Parker Rd. Allentown, New Mexico 31134
-                    </li>
-                </ul>
-                <ul class="footer__social">
-                    <li class="footer__social-item">
-                        <img src="../img/icons/icon-inst.svg" alt="icon instagram">
-                    </li>
-                    <li class="footer__social-item">
-                        <img src="../img/icons/icon-facebook.svg" alt="icon facebook">
-                    </li>
-                </ul>
-            </address>
-
-            <div class="footer__copy">
-                <a href="#"><img src="../img/icons/logo.svg" alt=" logo icon"></a>
-                <p>© 2024 LOGO. All rights reserved.</p>
-            </div>
-            <p class="footer__copy-mob">© 2024 LOGO. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-
-<script src="js/libs/jquery-3.6.0.min.js"></script> 
-<script src="js/libs/swiper-bundle.min.js"></script>
-<script src="js/app.js" type="module"></script>
-
-</body>
-
-</html>
+<?php get_footer(); ?>

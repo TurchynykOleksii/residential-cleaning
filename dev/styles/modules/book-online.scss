@@ -1,0 +1,111 @@
+@import '../core';
+
+.book {
+	&__num {
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		p:last-child {
+			font-weight: 400;
+			font-size: 22px;
+			line-height: 150%;
+			color: #000;
+		}
+	}
+	&__title {
+		margin-top: 60px;
+		margin-left: 40px;
+		margin-bottom: 40px;
+		font-weight: 600;
+		font-size: 40px;
+		color: #000;
+	}
+	&__step-title {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+        &:hover{
+            cursor: pointer;
+        }
+        input{
+            &:checked{
+                &:after{
+                    background-color: #000;
+                }
+            }
+            position: relative;
+            &:before{
+                content:'';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: block;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                border: 6px solid #5ac3b0;
+                transform: translate(-50%,-50%);
+                
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #000;
+                background-color: #5ac3b0;
+                transform: translate(-50%,-50%);
+
+            }
+        }
+		span {
+			font-weight: 500;
+			font-size: 32px;
+			color: $colorOrange;
+		}
+	}
+	&__step-choise {
+		margin-bottom: 60px;
+		display: flex;
+		align-items: center;
+		gap: 120px;
+	}
+	&__step {
+		margin-bottom: 60px;
+	}
+	&__number {
+		width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 600;
+		font-size: 40px;
+		color: $colorWhite;
+		background-color: #5ac3b0;
+		border-radius: 50%;
+	}
+	&__add-serv {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+	&__list-time {
+		margin-top: 36px;
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		gap: 90px;
+	}
+	&__title-second {
+        margin-bottom: 30px;
+		font-weight: 600;
+		font-size: 30px;
+		color: #5ac3b0;
+	}
+}

@@ -1,304 +1,43 @@
-<?php get_header(); ?>
-
-
+<?php
+/*
+Template Name: airbnb tamplate
+*/
+ get_header(); ?>
 
 <main class="main">
 
-    <section class="main-banner">
+
+
+    <section class="banner-arb">
         <div class="container">
-            <div class="main-banner__inner">
-                <p class="main-banner__headline">Experience the Difference: </p>
-                <h1 class="main-banner__title">Clean, Fresh, and Stress-Free</h1>
-                <button class="main-banner__btn"><span>Get A Quote</span> <img
+            <div class="banner-arb__inner">
+                <p class="banner-arb__headline">Experience the Difference: </p>
+                <h1 class="banner-arb__title">Airbnb Cleaning</h1>
+                <button class="banner-arb__btn"><span>Call now</span> <img
                         src="<?=get_template_directory_uri() ?>/build/img/icons/arrow-right-white.svg"
                         alt="icon arrow"></button>
             </div>
         </div>
     </section>
-    <section class="main-how">
+    <section class="about">
         <div class="container">
-            <div class="main-how__inner">
-                <h2>How does it work?</h2>
-                <ul class="main-how__list">
-                    <li class="main-how__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/icons/how1.svg" alt="icon">
-                        <p>Schedule services for a date and time that suits you best</p>
-                    </li>
-                    <li class="main-how__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/icons/how2.svg" alt="icon">
-                        <p>We carry out the service.</p>
-                    </li>
-                    <li class="main-how__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/icons/how3.svg" alt="icon">
-                        <p>You assess the service quality.</p>
-                    </li>
-                    <li class="main-how__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/icons/how4.svg" alt="icon">
-                        <p>You settle the payment for the service.</p>
-                    </li>
-                </ul>
-                <div class="swiper main-how__slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide main-how__card main-how__card-first">
-                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/how1.svg" alt="icon">
-                            <p>Schedule services for a date and time that suits you best</p>
-                        </div>
-                        <div class="swiper-slide main-how__card">
-                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/how2.svg" alt="icon">
-                            <p>Schedule services for a date and time that suits you best</p>
-                        </div>
-                        <div class="swiper-slide main-how__card">
-                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/how3.svg" alt="icon">
-                            <p>Schedule services for a date and time that suits you best</p>
-                        </div>
-                        <div class="swiper-slide main-how__card main-how__card-last">
-                            <img src="<?=get_template_directory_uri() ?>/build/img/icons/how4.svg" alt="icon">
-                            <p>Schedule services for a date and time that suits you best</p>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="main-why">
-        <div class="container">
-            <div class="main-why__inner">
-                <h3 class="main-why__title">Why choose us?</h3>
-                <p class="main-why__text">
-                    At ///// we pride ourselves in providing you with a high-quality clean & professional service.
-                    Servicing
-                    all of Toronto////, we offer Home, Business or Post -Construction Cleaning to give you a hand with
-                    your
-                    cleaning needs. Our friendly crew is ready to impress.
-                </p>
-                <ul class="main-why__list">
-                    <li class="main-why__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/icons/why1.svg" alt="icon">
-                        <div class="main-why__info">
-                            <strong>5 years of cleaning</strong>
-                            <p>Over 12,000 satisfied customers</p>
-                        </div>
-                    </li>
-                    <li class="main-why__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/icons/why2.svg" alt="icon">
-                        <div class="main-why__info">
-                            <strong>Perfect result</strong>
-                            <p>Your satisfaction is our top priority</p>
-                        </div>
-                    </li>
-                    <li class="main-why__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/icons/why3.svg" alt="icon">
-                        <div class="main-why__info">
-                            <strong>Safety and reliability</strong>
-                            <p>Compensation if you are not satisfied</p>
-                        </div>
-                    </li>
-                    <li class="main-why__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/icons/why4.svg" alt="icon">
-                        <div class="main-why__info">
-                            <strong>Professional cleaners</strong>
-                            <p>Careful selection and training of cleaners</p>
-                        </div>
-                    </li>
-                    <li class="main-why__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/icons/why5.svg" alt="icon">
-                        <div class="main-why__info">
-                            <strong>Transparent pricing</strong>
-                            <p>Fixed prices for services</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="main-our" id="main-our">
-        <div class="container">
-            <div class="main-our__inner">
-                <h3 class="main-our__title">Our Services</h3>
-                <ul class="main-our__list">
-                    <li class="main-our__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/general/our1.jpg" alt="our image">
-                        <div class="main-our__info">
-                            <h4 class="main-our__headline">Commercial Cleaning</h4>
-                            <p>
-                                Commercial cleaning entails the upkeep and sanitation of commercial establishments and
-                                public areas. Effective commercial cleaning enhances the professional image of your
-                                business.
-                            </p>
-                            <strong class="main-our__price">from CA$200</strong>
-                        </div>
-                    </li>
-                    <li class="main-our__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/general/our2.jpg" alt="our image">
-                        <div class="main-our__info">
-                            <h4 class="main-our__headline">Residental Cleaning</h4>
-                            <p>
-                                Residential cleaning is vital for upholding a healthy and hygienic atmosphere in the
-                                home.
-                                Regular residential cleaning promotes a sense of comfort and well-being for you and your
-                                family
-                            </p>
-                            <strong class="main-our__price">from CA$140</strong>
-                        </div>
-                    </li>
-                    <li class="main-our__item">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/general/our3.jpg" alt="our image">
-                        <div class="main-our__info">
-                            <h4 class="main-our__headline">Deep Cleaning</h4>
-                            <p>
-                                Experience the ultimate in cleanliness with our deep cleaning services, harnessing the
-                                power
-                                of steam cleaners, electric scrubbers, and pressure washers for a heavy duty tasks.
-                            </p>
-                            <strong class="main-our__price">from CA$220</strong>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="main-clean">
-        <div class="container">
-            <div class="main-clean__inner">
-                <h3 class="main-clean__title">How We Clean</h3>
-                <div class="swiper clean">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <h4>Kitchen</h4>
-                            <div class="swiper__image">
-                                <img src="<?=get_template_directory_uri() ?>/build/img/general/clean1.jpg"
-                                    alt="clean image">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <h4>Bathroom</h4>
-                            <div class="swiper__image">
-                                <img src="<?=get_template_directory_uri() ?>/build/img/general/clean2.jpg"
-                                    alt="clean image">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <h4>Living Room</h4>
-                            <div class="swiper__image">
-                                <img src="<?=get_template_directory_uri() ?>/build/img/general/clean3.jpg"
-                                    alt="clean image">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <h4>Bedroom</h4>
-                            <div class="swiper__image">
-                                <img src="<?=get_template_directory_uri() ?>/build/img/general/clean4.jpg"
-                                    alt="clean image">
-                            </div>
-                        </div>
-                        ...
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper__pagination-wrap">
-                        <div class="swiper-button-prev">
-                            <svg width="43" height="9" viewBox="0 0 43 9" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.646446 4.14645C0.451183 4.34171 0.451183 4.65829 0.646446 4.85356L3.82843 8.03554C4.02369 8.2308 4.34027 8.2308 4.53553 8.03554C4.7308 7.84028 4.7308 7.52369 4.53553 7.32843L1.70711 4.5L4.53553 1.67158C4.7308 1.47631 4.7308 1.15973 4.53553 0.964469C4.34027 0.769207 4.02369 0.769207 3.82843 0.96447L0.646446 4.14645ZM43 4L1 4L1 5L43 5L43 4Z"
-                                    fill="#72778F" />
-                            </svg>
-                        </div>
-                        <div class="swiper-button-next">
-                            <svg width="43" height="25" viewBox="0 0 43 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M42.3536 12.8535C42.5488 12.6583 42.5488 12.3417 42.3536 12.1464L39.1716 8.96446C38.9763 8.7692 38.6597 8.7692 38.4645 8.96446C38.2692 9.15972 38.2692 9.47631 38.4645 9.67157L41.2929 12.5L38.4645 15.3284C38.2692 15.5237 38.2692 15.8403 38.4645 16.0355C38.6597 16.2308 38.9763 16.2308 39.1716 16.0355L42.3536 12.8535ZM4.37114e-08 13L42 13L42 12L-4.37114e-08 12L4.37114e-08 13Z"
-                                    fill="#72778F" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="main-revitalize">
-        <div class="container">
-            <div class="main-revitalize__inner">
-                <h3 class="main-revitalize__title">Revitalize your space with our Advance Cleaning Services </h3>
-                <p class="main-revitalize__subtitle">Are you craving a fresh start for your home or office space? Look
-                    no
-                    further! Our deep cleaning service is here to breathe new life into your environment, leaving it
-                    sparkling clean and rejuvenated.</p>
-                <div class="swiper revitalize__swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-
-                            <div class="swiper__image">
-                                <img src="<?=get_template_directory_uri() ?>/build/img/general/revitalize1.png"
-                                    alt="clean image">
-                            </div>
-                            <div class="main-revitalize__text">
-                                <h4 class="main-revitalize__headline">What do we offer?</h4>
-                                <ul class="main-revitalize__list">
-                                    <li class="main-revitalize__item">Pressure washing driveways</li>
-                                    <li class="main-revitalize__item">Steam cleaning kitchen appliances</li>
-                                    <li class="main-revitalize__item">Upholstery sanitation</li>
-                                    <li class="main-revitalize__item">Professional steam cleansing</li>
-                                    <li class="main-revitalize__item">Post-construction cleanup</li>
-                                    <li class="main-revitalize__item">Brick and stonework restoration</li>
-                                    <li class="main-revitalize__item">Bathroom steam cleaning and disinfection</li>
-                                    <li class="main-revitalize__item">DOFF and TORC Cleaning</li>
-                                </ul>
-                                <a href="#" class="bttn main-revitalize__bttn">read more <img
-                                        src="<?=get_template_directory_uri() ?>/build/img/icons/arrow-right-white.svg"
-                                        alt="arrow icons"></a>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper__image">
-                                <img src="<?=get_template_directory_uri() ?>/build/img/general/revitalize2.png"
-                                    alt="clean image">
-                            </div>
-                            <div class="main-revitalize__text">
-                                <h4 class="main-revitalize__headline">What do we offer?</h4>
-                                <ul class="main-revitalize__list">
-                                    <li class="main-revitalize__item">Pressure washing driveways</li>
-                                    <li class="main-revitalize__item">Steam cleaning kitchen appliances</li>
-                                    <li class="main-revitalize__item">Upholstery sanitation</li>
-                                    <li class="main-revitalize__item">Professional steam cleansing</li>
-                                    <li class="main-revitalize__item">Post-construction cleanup</li>
-                                    <li class="main-revitalize__item">Brick and stonework restoration</li>
-                                    <li class="main-revitalize__item">Bathroom steam cleaning and disinfection</li>
-                                    <li class="main-revitalize__item">DOFF and TORC Cleaning</li>
-                                </ul>
-                                <a href="#" class="bttn main-revitalize__bttn">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper__pagination-wrap">
-                        <div class="swiper-button-prev">
-                            <svg width="43" height="25" viewBox="0 0 43 9" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.646446 4.14645C0.451183 4.34171 0.451183 4.65829 0.646446 4.85356L3.82843 8.03554C4.02369 8.2308 4.34027 8.2308 4.53553 8.03554C4.7308 7.84028 4.7308 7.52369 4.53553 7.32843L1.70711 4.5L4.53553 1.67158C4.7308 1.47631 4.7308 1.15973 4.53553 0.964469C4.34027 0.769207 4.02369 0.769207 3.82843 0.96447L0.646446 4.14645ZM43 4L1 4L1 5L43 5L43 4Z"
-                                    fill="#72778F" />
-                            </svg>
-                        </div>
-                        <div class="swiper-button-next">
-                            <svg width="43" height="25" viewBox="0 0 43 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M42.3536 12.8535C42.5488 12.6583 42.5488 12.3417 42.3536 12.1464L39.1716 8.96446C38.9763 8.7692 38.6597 8.7692 38.4645 8.96446C38.2692 9.15972 38.2692 9.47631 38.4645 9.67157L41.2929 12.5L38.4645 15.3284C38.2692 15.5237 38.2692 15.8403 38.4645 16.0355C38.6597 16.2308 38.9763 16.2308 39.1716 16.0355L42.3536 12.8535ZM4.37114e-08 13L42 13L42 12L-4.37114e-08 12L4.37114e-08 13Z"
-                                    fill="#72778F" />
-                            </svg>
-                        </div>
-                    </div>
+            <div class="about__inner">
+                <h2 class="about__title">About Airbnb Cleaning</h2>
+                <div class="about__text">
+                    <p>Presenting our Airbnb cleaning service, meticulously crafted to accommodate the dynamic demands
+                        of hosting guests. We recognize the urgency in preparing your apartment for incoming visitors,
+                        and our dedicated team is committed to ensuring a seamless transition between guests, leaving
+                        your space pristine and welcoming.</p>
+                    <p>Our expedited service targets key areas to ensure a swift turnaround without compromising on
+                        quality. This includes vacuuming and floor cleaning to create a fresh and inviting environment.
+                        We meticulously sanitize the bathroom, focusing on the toilet, shower, and sink to uphold
+                        impeccable cleanliness and hygienic conditions.</p>
+                    <p>In the kitchen, we streamline the cleaning process by prioritizing high-traffic areas, swiftly
+                        wiping countertops, cleaning appliances, and sanitizing the sink. Our fast and efficient glass
+                        surface and mirror cleaning elevate the overall aesthetic appeal of your space. </p>
+                    <p>Beyond the basics, we recognize the significance of presenting a well-organized and inviting
+                        ambiance. Our team efficiently manages and arranges items on surfaces, contributing to an
+                        inviting atmosphere for your incoming guests.</p>
                 </div>
             </div>
         </div>
@@ -734,33 +473,6 @@
             </div>
         </div>
     </section>
-    <section class="deep-mob">
-        <div class="container">
-            <div class="deep-mob__inner">
-                <h5 class="deep-mob__title">Deep Cleaning Service</h5>
-            </div>
-            <div class="deep-mob__text">
-                <p>Experience the transformative impact of our Deep Cleaning service, where we transcend surface
-                    cleaning to
-                    revitalize and renew your living spaces. Whether you're preparing for a special event or simply
-                    aiming
-                    to give your home a thorough refresh, our comprehensive approach ensures an unmatched level of
-                    cleanliness.</p>
-                <p>Our heavy-duty cleaning service encompasses meticulous window washing, bringing clarity and
-                    brightness to
-                    your living spaces. We utilize professional-grade degreasers to effectively tackle stubborn stains
-                    and
-                    greasy surfaces in the kitchen, leaving behind a spotless and sanitized environment. Appliances,
-                    including ovens and stovetops, receive special attention to ensure they gleam and function
-                    optimally.
-                </p>
-                <p>In bathrooms, our deep cleaning targets grime and buildup, leaving fixtures, tiles, and surfaces
-                    pristine. We employ powerful degreasing agents to eliminate accumulated dirt in hard-to-reach areas,
-                    promoting a hygienic and visually appealing space. From light fixtures to baseboards, every nook and
-                    cranny receives thorough attention, providing a comprehensive refresh for your home.</p>
-            </div>
-        </div>
-    </section>
     <section class="discount">
         <div class="container">
             <div class="discount__inner">
@@ -785,45 +497,6 @@
             </div>
         </div>
     </section>
-    <section class="service-map">
-        <div class="container">
-            <div class="service-map__inner">
-                <div class="service-map__info">
-                    <h3 class="service-map__title">Service map</h3>
-                    <div class="service-map__img-mob">
-                        <img src="<?=get_template_directory_uri() ?>/build/img/general/map.png" alt="map image">
-                    </div>
-                    <p class="service-map__text">Discover the neighborhoods we serve. Let us transform your space into a
-                        sanctuary of cleanliness and comfort!
-                        Contact us today to schedule your cleaning appointment and experience the difference firsthand.
-                    </p>
-                    <ul class="service-map__list">
-                        <li class="service-map__item">
-                            <span>Contact us:</span>
-                            <a href="tel:14378684158">1(437)868-4158</a>
-                        </li>
-                        <li class="service-map__item">
-                            <span>Cleaning hours: </span>
-                            <p>Monday - Saturday 8 am to 8 pm</p>
-                        </li>
-                        <li class="service-map__item">
-                            <span>Office hours:</span>
-                            <p>Monday - Saturday 8 am to 8 pm</p>
-                        </li>
-                        <li class="service-map__item">
-                            <span>Online booking:</span>
-                            <p>24/7</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="service-map__img">
-                    <img src="<?=get_template_directory_uri() ?>/build/img/general/map.png" alt="map image">
-                </div>
-
-            </div>
-        </div>
-    </section>
-
     <section class="feetback">
         <div class="feetback__inner">
             <div class="container">

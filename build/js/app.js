@@ -13,6 +13,7 @@ const inputs = document.querySelectorAll('.feetback__label input');
 inputs.forEach((input) => {
 	input.addEventListener('focus', function () {
 		input.nextElementSibling.classList.add('active__input');
+		input.lastChild.classList.add('active__input');
 	});
 
 	input.addEventListener('blur', function () {

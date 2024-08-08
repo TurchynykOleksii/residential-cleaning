@@ -109,6 +109,7 @@
 	add_action( 'after_setup_theme', function(){
 		register_nav_menus( [
 			'header_menu' => 'Меню в шапке',
+			'mobile_menu' => 'Мобильное меню',
 			'footer_menu' => 'Меню в подвале'
 		] );
 
@@ -282,8 +283,19 @@
 
 # 9. Прочее
 	# Страница опций ACF PRO
-	// if (function_exists('acf_add_options_page')) acf_add_options_page();
+	 if (function_exists('acf_add_options_page')) acf_add_options_page();
+     add_filter('wpcf7_form_elements', function($content) {
+        $content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+    
+        return $content;
+    });
 
+    add_action( 'wp_enqueue_scripts', 'main_styles' );
+// add_action('wp_print_styles', 'theme_name_scripts'); // можно использовать этот хук он более поздний
+function main_styles() {
+	// wp_enqueue_style( 'slick-styles', get_template_directory_uri() . '/css/libs/swiper.css');
+	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/style.css' );
+}
 
 	# ACF Map activation
 	// function my_acf_init() {

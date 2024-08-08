@@ -127,6 +127,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .about-s__headline {
+    max-width: 508px;
     margin-bottom: 16px;
     font-size: 32px;
   }
